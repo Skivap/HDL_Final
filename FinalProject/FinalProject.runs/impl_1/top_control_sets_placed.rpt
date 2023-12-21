@@ -1,0 +1,290 @@
+Copyright 1986-2020 Xilinx, Inc. All Rights Reserved.
+------------------------------------------------------------------------------------
+| Tool Version : Vivado v.2020.2 (win64) Build 3064766 Wed Nov 18 09:12:45 MST 2020
+| Date         : Thu Dec 21 16:48:41 2023
+| Host         : LAPTOP-T7B654NQ running 64-bit major release  (build 9200)
+| Command      : report_control_sets -verbose -file top_control_sets_placed.rpt
+| Design       : top
+| Device       : xc7a35t
+------------------------------------------------------------------------------------
+
+Control Set Information
+
+Table of Contents
+-----------------
+1. Summary
+2. Histogram
+3. Flip-Flop Distribution
+4. Detailed Control Set Information
+
+1. Summary
+----------
+
++----------------------------------------------------------+-------+
+|                          Status                          | Count |
++----------------------------------------------------------+-------+
+| Total control sets                                       |   212 |
+|    Minimum number of control sets                        |   212 |
+|    Addition due to synthesis replication                 |     0 |
+|    Addition due to physical synthesis replication        |     0 |
+| Unused register locations in slices containing registers |  1034 |
++----------------------------------------------------------+-------+
+* Control sets can be merged at opt_design using control_set_merge or merge_equivalent_drivers
+** Run report_qor_suggestions for automated merging and remapping suggestions
+
+
+2. Histogram
+------------
+
++--------------------+-------+
+|       Fanout       | Count |
++--------------------+-------+
+| Total control sets |   212 |
+| >= 0 to < 4        |    98 |
+| >= 4 to < 6        |   100 |
+| >= 6 to < 8        |     4 |
+| >= 8 to < 10       |     3 |
+| >= 10 to < 12      |     3 |
+| >= 12 to < 14      |     0 |
+| >= 14 to < 16      |     0 |
+| >= 16              |     4 |
++--------------------+-------+
+* Control sets can be remapped at either synth_design or opt_design
+
+
+3. Flip-Flop Distribution
+-------------------------
+
++--------------+-----------------------+------------------------+-----------------+--------------+
+| Clock Enable | Synchronous Set/Reset | Asynchronous Set/Reset | Total Registers | Total Slices |
++--------------+-----------------------+------------------------+-----------------+--------------+
+| No           | No                    | No                     |             244 |           92 |
+| No           | No                    | Yes                    |              60 |           18 |
+| No           | Yes                   | No                     |              39 |           13 |
+| Yes          | No                    | No                     |             468 |          163 |
+| Yes          | No                    | Yes                    |              42 |           14 |
+| Yes          | Yes                   | No                     |             945 |          335 |
++--------------+-----------------------+------------------------+-----------------+--------------+
+
+
+4. Detailed Control Set Information
+-----------------------------------
+
++----------------------+---------------------------------------------------------+-------------------------------+------------------+----------------+--------------+
+|     Clock Signal     |                      Enable Signal                      |        Set/Reset Signal       | Slice Load Count | Bel Load Count | Bels / Slice |
++----------------------+---------------------------------------------------------+-------------------------------+------------------+----------------+--------------+
+|  clk_IBUF_BUFG       | gs1/next_board[6][7]_i_1_n_0                            | gs1/next_board[6][5]_i_1_n_0  |                1 |              1 |         1.00 |
+|  clk_IBUF_BUFG       | gs1/next_board[39][7]_i_1_n_0                           | gs1/next_board[39][5]_i_1_n_0 |                1 |              1 |         1.00 |
+|  clk_IBUF_BUFG       | gs1/next_board[47][7]_i_1_n_0                           | gs1/next_board[47][5]_i_1_n_0 |                1 |              1 |         1.00 |
+|  clk_IBUF_BUFG       | gs1/next_board[81][7]_i_1_n_0                           | gs1/next_board[81][5]_i_1_n_0 |                1 |              1 |         1.00 |
+|  clk_IBUF_BUFG       | gs1/next_board[57][7]_i_1_n_0                           | gs1/next_board[57][5]_i_1_n_0 |                1 |              1 |         1.00 |
+|  clk_IBUF_BUFG       | gs1/next_board[92][7]_i_1_n_0                           | gs1/next_board[92][5]_i_1_n_0 |                1 |              1 |         1.00 |
+|  clk_IBUF_BUFG       | gs1/next_board[60][7]_i_1_n_0                           | gs1/next_board[60][5]_i_1_n_0 |                1 |              1 |         1.00 |
+|  clk_IBUF_BUFG       | gs1/next_board[83][7]_i_1_n_0                           | gs1/next_board[83][5]_i_1_n_0 |                1 |              1 |         1.00 |
+|  clk_IBUF_BUFG       | gs1/next_board[61][7]_i_1_n_0                           | gs1/next_board[61][5]_i_1_n_0 |                1 |              1 |         1.00 |
+|  clk_IBUF_BUFG       | gs1/next_board[95][7]_i_1_n_0                           | gs1/next_board[95][5]_i_1_n_0 |                1 |              1 |         1.00 |
+|  clk_IBUF_BUFG       | gs1/next_board[5][7]_i_1_n_0                            | gs1/next_board[5][5]_i_1_n_0  |                1 |              1 |         1.00 |
+|  clk_IBUF_BUFG       | gs1/next_board[84][7]_i_1_n_0                           | gs1/next_board[84][5]_i_1_n_0 |                1 |              1 |         1.00 |
+|  clk_IBUF_BUFG       | gs1/next_board[58][7]_i_1_n_0                           | gs1/next_board[58][5]_i_1_n_0 |                1 |              1 |         1.00 |
+|  clk_IBUF_BUFG       | gs1/next_board[90][7]_i_1_n_0                           | gs1/next_board[90][5]_i_1_n_0 |                1 |              1 |         1.00 |
+|  clk_IBUF_BUFG       | gs1/next_board[59][7]_i_1_n_0                           | gs1/next_board[59][5]_i_1_n_0 |                1 |              1 |         1.00 |
+|  clk_IBUF_BUFG       | gs1/next_board[82][7]_i_1_n_0                           | gs1/next_board[82][5]_i_1_n_0 |                1 |              1 |         1.00 |
+|  clk_IBUF_BUFG       | gs1/next_board[65][7]_i_1_n_0                           | gs1/next_board[65][5]_i_1_n_0 |                1 |              1 |         1.00 |
+|  clk_IBUF_BUFG       | gs1/next_board[46][7]_i_1_n_0                           | gs1/next_board[46][5]_i_1_n_0 |                1 |              1 |         1.00 |
+|  clk_IBUF_BUFG       | gs1/next_board[64][7]_i_1_n_0                           | gs1/next_board[64][5]_i_1_n_0 |                1 |              1 |         1.00 |
+|  clk_IBUF_BUFG       | gs1/next_board[8][7]_i_1_n_0                            | gs1/next_board[8][5]_i_1_n_0  |                1 |              1 |         1.00 |
+|  clk_IBUF_BUFG       | gs1/next_board[66][7]_i_1_n_0                           | gs1/next_board[66][5]_i_1_n_0 |                1 |              1 |         1.00 |
+|  clk_IBUF_BUFG       | gs1/next_board[97][7]_i_1_n_0                           | gs1/next_board[97][5]_i_1_n_0 |                1 |              1 |         1.00 |
+|  clk_IBUF_BUFG       | gs1/next_board[63][7]_i_1_n_0                           | gs1/next_board[63][5]_i_1_n_0 |                1 |              1 |         1.00 |
+|  clk_IBUF_BUFG       | gs1/next_board[89][7]_i_1_n_0                           | gs1/next_board[89][5]_i_1_n_0 |                1 |              1 |         1.00 |
+|  clk_IBUF_BUFG       | gs1/next_board[62][7]_i_1_n_0                           | gs1/next_board[62][5]_i_1_n_0 |                1 |              1 |         1.00 |
+|  clk_IBUF_BUFG       | gs1/next_board[9][7]_i_1_n_0                            | gs1/next_board[9][5]_i_1_n_0  |                1 |              1 |         1.00 |
+|  clk_IBUF_BUFG       | gs1/next_board[79][7]_i_1_n_0                           | gs1/next_board[79][5]_i_1_n_0 |                1 |              1 |         1.00 |
+|  clk_IBUF_BUFG       | gs1/next_board[85][7]_i_1_n_0                           | gs1/next_board[85][5]_i_1_n_0 |                1 |              1 |         1.00 |
+|  clk_IBUF_BUFG       | gs1/next_board[69][7]_i_1_n_0                           | gs1/next_board[69][5]_i_1_n_0 |                1 |              1 |         1.00 |
+|  clk_IBUF_BUFG       | gs1/next_board[3][7]_i_1_n_0                            | gs1/next_board[3][5]_i_1_n_0  |                1 |              1 |         1.00 |
+|  clk_IBUF_BUFG       | gs1/next_board[70][7]_i_1_n_0                           | gs1/next_board[70][5]_i_1_n_0 |                1 |              1 |         1.00 |
+|  clk_IBUF_BUFG       | gs1/next_board[56][7]_i_1_n_0                           | gs1/next_board[56][5]_i_1_n_0 |                1 |              1 |         1.00 |
+|  clk_IBUF_BUFG       | gs1/next_board[67][6]_i_1_n_0                           | gs1/next_board[67][5]_i_1_n_0 |                1 |              1 |         1.00 |
+|  clk_IBUF_BUFG       | gs1/next_board[87][6]_i_1_n_0                           | gs1/next_board[87][5]_i_1_n_0 |                1 |              1 |         1.00 |
+|  clk_IBUF_BUFG       | gs1/next_board[68][7]_i_1_n_0                           | gs1/next_board[68][5]_i_1_n_0 |                1 |              1 |         1.00 |
+|  clk_IBUF_BUFG       | gs1/next_board[96][7]_i_1_n_0                           | gs1/next_board[96][5]_i_1_n_0 |                1 |              1 |         1.00 |
+|  clk_IBUF_BUFG       | gs1/next_board[72][7]_i_1_n_0                           | gs1/next_board[72][5]_i_1_n_0 |                1 |              1 |         1.00 |
+|  clk_IBUF_BUFG       | gs1/next_board[88][7]_i_1_n_0                           | gs1/next_board[88][5]_i_1_n_0 |                1 |              1 |         1.00 |
+|  clk_IBUF_BUFG       | gs1/next_board[73][7]_i_1_n_0                           | gs1/next_board[73][5]_i_1_n_0 |                1 |              1 |         1.00 |
+|  clk_IBUF_BUFG       | gs1/next_board[45][7]_i_1_n_0                           | gs1/next_board[45][5]_i_1_n_0 |                1 |              1 |         1.00 |
+|  clk_IBUF_BUFG       | gs1/next_board[75][7]_i_1_n_0                           | gs1/next_board[75][5]_i_1_n_0 |                1 |              1 |         1.00 |
+|  clk_IBUF_BUFG       | gs1/next_board[86][7]_i_1_n_0                           | gs1/next_board[86][5]_i_1_n_0 |                1 |              1 |         1.00 |
+|  clk_IBUF_BUFG       | gs1/next_board[74][7]_i_1_n_0                           | gs1/next_board[74][5]_i_1_n_0 |                1 |              1 |         1.00 |
+|  clk_IBUF_BUFG       | gs1/next_board[98][7]_i_1_n_0                           | gs1/next_board[98][5]_i_1_n_0 |                1 |              1 |         1.00 |
+|  clk_IBUF_BUFG       | gs1/next_board[71][7]_i_1_n_0                           | gs1/next_board[71][5]_i_1_n_0 |                1 |              1 |         1.00 |
+|  clk_IBUF_BUFG       | gs1/next_board[93][7]_i_1_n_0                           | gs1/next_board[93][5]_i_1_n_0 |                1 |              1 |         1.00 |
+|  clk_IBUF_BUFG       | gs1/next_board[78][7]_i_1_n_0                           | gs1/next_board[78][5]_i_1_n_0 |                1 |              1 |         1.00 |
+|  clk_IBUF_BUFG       | gs1/next_board[42][7]_i_1_n_0                           | gs1/next_board[42][5]_i_1_n_0 |                1 |              1 |         1.00 |
+|  clk_IBUF_BUFG       | gs1/next_board[77][7]_i_1_n_0                           | gs1/next_board[77][5]_i_1_n_0 |                1 |              1 |         1.00 |
+|  clk_IBUF_BUFG       | gs1/next_board[94][7]_i_1_n_0                           | gs1/next_board[94][5]_i_1_n_0 |                1 |              1 |         1.00 |
+|  clk_IBUF_BUFG       | gs1/next_board[76][7]_i_1_n_0                           | gs1/next_board[76][5]_i_1_n_0 |                1 |              1 |         1.00 |
+|  clk_IBUF_BUFG       | gs1/next_board[99][7]_i_1_n_0                           | gs1/next_board[99][5]_i_1_n_0 |                1 |              1 |         1.00 |
+|  clk_IBUF_BUFG       | gs1/next_board[41][7]_i_1_n_0                           | gs1/next_board[41][5]_i_1_n_0 |                1 |              1 |         1.00 |
+|  clk_IBUF_BUFG       | gs1/next_board[91][7]_i_1_n_0                           | gs1/next_board[91][5]_i_1_n_0 |                1 |              1 |         1.00 |
+|  clk_IBUF_BUFG       | gs1/next_board[7][7]_i_1_n_0                            | gs1/next_board[7][5]_i_1_n_0  |                1 |              1 |         1.00 |
+|  clk_IBUF_BUFG       | gs1/next_board[44][7]_i_1_n_0                           | gs1/next_board[44][5]_i_1_n_0 |                1 |              1 |         1.00 |
+|  clk_IBUF_BUFG       | gs1/next_board[43][7]_i_1_n_0                           | gs1/next_board[43][5]_i_1_n_0 |                1 |              1 |         1.00 |
+|  clk_IBUF_BUFG       | gs1/next_board[11][7]_i_1_n_0                           | gs1/next_board[11][5]_i_1_n_0 |                1 |              1 |         1.00 |
+|  clk_IBUF_BUFG       | gs1/next_board[4][7]_i_1_n_0                            | gs1/next_board[4][5]_i_1_n_0  |                1 |              1 |         1.00 |
+|  clk_IBUF_BUFG       | gs1/next_board[13][7]_i_1_n_0                           | gs1/next_board[13][5]_i_1_n_0 |                1 |              1 |         1.00 |
+|  clk_IBUF_BUFG       | gs1/next_board[10][7]_i_1_n_0                           | gs1/next_board[10][5]_i_1_n_0 |                1 |              1 |         1.00 |
+|  clk_IBUF_BUFG       | gs1/next_board[14][6]_i_1_n_0                           | gs1/next_board[14][5]_i_1_n_0 |                1 |              1 |         1.00 |
+|  clk_IBUF_BUFG       | gs1/next_board[12][7]_i_1_n_0                           | gs1/next_board[12][5]_i_1_n_0 |                1 |              1 |         1.00 |
+|  clk_IBUF_BUFG       | gs1/next_board[19][7]_i_1_n_0                           | gs1/next_board[19][5]_i_1_n_0 |                1 |              1 |         1.00 |
+|  clk_IBUF_BUFG       | gs1/next_board[15][7]_i_1_n_0                           | gs1/next_board[15][5]_i_1_n_0 |                1 |              1 |         1.00 |
+|  clk_IBUF_BUFG       | gs1/next_board[16][7]_i_1_n_0                           | gs1/next_board[16][5]_i_1_n_0 |                1 |              1 |         1.00 |
+|  clk_IBUF_BUFG       | gs1/next_board[17][7]_i_1_n_0                           | gs1/next_board[17][5]_i_1_n_0 |                1 |              1 |         1.00 |
+|  clk_IBUF_BUFG       | gs1/next_board[18][7]_i_1_n_0                           | gs1/next_board[18][5]_i_1_n_0 |                1 |              1 |         1.00 |
+|  clk_IBUF_BUFG       | gs1/next_board[24][7]_i_1_n_0                           | gs1/next_board[24][5]_i_1_n_0 |                1 |              1 |         1.00 |
+|  clk_IBUF_BUFG       | gs1/next_board[21][7]_i_1_n_0                           | gs1/next_board[21][5]_i_1_n_0 |                1 |              1 |         1.00 |
+|  clk_IBUF_BUFG       | gs1/next_board[23][7]_i_1_n_0                           | gs1/next_board[23][5]_i_1_n_0 |                1 |              1 |         1.00 |
+|  clk_IBUF_BUFG       | gs1/next_board[22][7]_i_1_n_0                           | gs1/next_board[22][5]_i_1_n_0 |                1 |              1 |         1.00 |
+|  clk_IBUF_BUFG       | gs1/next_board[20][7]_i_1_n_0                           | gs1/next_board[20][5]_i_1_n_0 |                1 |              1 |         1.00 |
+|  clk_IBUF_BUFG       | gs1/next_board[28][7]_i_1_n_0                           | gs1/next_board[28][5]_i_1_n_0 |                1 |              1 |         1.00 |
+|  clk_IBUF_BUFG       | gs1/next_board[26][7]_i_1_n_0                           | gs1/next_board[26][5]_i_1_n_0 |                1 |              1 |         1.00 |
+|  clk_IBUF_BUFG       | gs1/next_board[27][6]_i_1_n_0                           | gs1/next_board[27][5]_i_1_n_0 |                1 |              1 |         1.00 |
+|  clk_IBUF_BUFG       | gs1/next_board[25][7]_i_1_n_0                           | gs1/next_board[25][5]_i_1_n_0 |                1 |              1 |         1.00 |
+|  clk_IBUF_BUFG       | gs1/next_board[31][7]_i_1_n_0                           | gs1/next_board[31][5]_i_1_n_0 |                1 |              1 |         1.00 |
+|  clk_IBUF_BUFG       | gs1/next_board[30][7]_i_1_n_0                           | gs1/next_board[30][5]_i_1_n_0 |                1 |              1 |         1.00 |
+|  clk_IBUF_BUFG       | gs1/next_board[2][6]_i_1_n_0                            | gs1/next_board[2][5]_i_1_n_0  |                1 |              1 |         1.00 |
+|  clk_IBUF_BUFG       | gs1/next_board[32][7]_i_1_n_0                           | gs1/next_board[32][5]_i_1_n_0 |                1 |              1 |         1.00 |
+|  clk_IBUF_BUFG       | gs1/next_board[29][7]_i_1_n_0                           | gs1/next_board[29][5]_i_1_n_0 |                1 |              1 |         1.00 |
+|  clk_IBUF_BUFG       | gs1/next_board[38][7]_i_1_n_0                           | gs1/next_board[38][5]_i_1_n_0 |                1 |              1 |         1.00 |
+|  clk_IBUF_BUFG       | gs1/next_board[33][7]_i_1_n_0                           | gs1/next_board[33][5]_i_1_n_0 |                1 |              1 |         1.00 |
+|  clk_IBUF_BUFG       | gs1/next_board[34][7]_i_1_n_0                           | gs1/next_board[34][5]_i_1_n_0 |                1 |              1 |         1.00 |
+|  clk_IBUF_BUFG       | gs1/next_board[37][7]_i_1_n_0                           | gs1/next_board[37][5]_i_1_n_0 |                1 |              1 |         1.00 |
+|  clk_IBUF_BUFG       | gs1/next_board[35][7]_i_1_n_0                           | gs1/next_board[35][5]_i_1_n_0 |                1 |              1 |         1.00 |
+|  clk_IBUF_BUFG       | gs1/next_board[36][7]_i_1_n_0                           | gs1/next_board[36][5]_i_1_n_0 |                1 |              1 |         1.00 |
+|  clk_IBUF_BUFG       | gs1/next_board[40][7]_i_1_n_0                           | gs1/next_board[40][5]_i_1_n_0 |                1 |              1 |         1.00 |
+|  clk_IBUF_BUFG       | gs1/next_board[52][7]_i_2_n_0                           | gs1/next_board[52][7]_i_1_n_0 |                1 |              2 |         2.00 |
+|  clk_IBUF_BUFG       | gs1/next_board[55][7]_i_2_n_0                           | gs1/next_board[55][7]_i_1_n_0 |                1 |              2 |         2.00 |
+|  clk_IBUF_BUFG       | gs1/next_board[51][7]_i_2_n_0                           | gs1/next_board[51][7]_i_1_n_0 |                2 |              2 |         1.00 |
+|  clk_IBUF_BUFG       | gs1/next_board[53][7]_i_2_n_0                           | gs1/next_board[53][7]_i_1_n_0 |                2 |              2 |         1.00 |
+|  clk_IBUF_BUFG       | gs1/next_board[49][7]_i_2_n_0                           | gs1/next_board[49][7]_i_1_n_0 |                1 |              2 |         2.00 |
+|  clk_IBUF_BUFG       | gs1/next_board[50][7]_i_2_n_0                           | gs1/next_board[50][7]_i_1_n_0 |                1 |              2 |         2.00 |
+|  clk_IBUF_BUFG       | gs1/next_board[54][7]_i_2_n_0                           | gs1/next_board[54][7]_i_1_n_0 |                1 |              2 |         2.00 |
+|  clk_IBUF_BUFG       | KeyEv/key_de/inst/inst/lock_status0                     | OP_R/rst                      |                1 |              2 |         2.00 |
+|  clk_wiz_0_inst/Q[0] |                                                         | OP_R/rst                      |                2 |              2 |         1.00 |
+|  clk_IBUF_BUFG       | gs1/next_board[49][7]_i_2_n_0                           |                               |                1 |              4 |         4.00 |
+|  clk_IBUF_BUFG       | gs1/next_board[87][6]_i_1_n_0                           |                               |                2 |              4 |         2.00 |
+|  clk_IBUF_BUFG       | gs1/next_board[67][6]_i_1_n_0                           |                               |                1 |              4 |         4.00 |
+|  clk_IBUF_BUFG       | gs1/next_board[52][7]_i_2_n_0                           |                               |                2 |              4 |         2.00 |
+|  clk_IBUF_BUFG       | gs1/next_board[2][6]_i_1_n_0                            |                               |                1 |              4 |         4.00 |
+|  clk_IBUF_BUFG       | gs1/next_board[55][7]_i_2_n_0                           |                               |                1 |              4 |         4.00 |
+|  clk_IBUF_BUFG       | gs1/next_board[51][7]_i_2_n_0                           |                               |                1 |              4 |         4.00 |
+|  clk_IBUF_BUFG       | gs1/next_board[53][7]_i_2_n_0                           |                               |                1 |              4 |         4.00 |
+|  clk_IBUF_BUFG       | gs1/next_board[50][7]_i_2_n_0                           |                               |                2 |              4 |         2.00 |
+|  clk_IBUF_BUFG       | gs1/next_board[14][6]_i_1_n_0                           |                               |                1 |              4 |         4.00 |
+|  clk_IBUF_BUFG       | gs1/next_board[27][6]_i_1_n_0                           |                               |                1 |              4 |         4.00 |
+|  clk_IBUF_BUFG       | gs1/next_board[54][7]_i_2_n_0                           |                               |                1 |              4 |         4.00 |
+|  clk_IBUF_BUFG       | KeyEv/E[0]                                              | OP_R2/SR[0]                   |                2 |              4 |         2.00 |
+|  clk_IBUF_BUFG       | gs1/os/E[0]                                             | OP_R2/SR[0]                   |                2 |              4 |         2.00 |
+|  clk_IBUF_BUFG       | KeyEv/key_de/inst/inst/Ps2Interface_i/bits_count        | OP_R/rst                      |                3 |              4 |         1.33 |
+|  KeyEv/key_de/E[0]   |                                                         |                               |                1 |              4 |         4.00 |
+|  clk_IBUF_BUFG       | gs1/next_board[58][7]_i_1_n_0                           |                               |                1 |              5 |         5.00 |
+|  clk_IBUF_BUFG       | gs1/next_board[59][7]_i_1_n_0                           |                               |                2 |              5 |         2.50 |
+|  clk_IBUF_BUFG       | gs1/next_board[65][7]_i_1_n_0                           |                               |                1 |              5 |         5.00 |
+|  clk_IBUF_BUFG       | gs1/next_board[64][7]_i_1_n_0                           |                               |                2 |              5 |         2.50 |
+|  clk_IBUF_BUFG       | gs1/next_board[66][7]_i_1_n_0                           |                               |                2 |              5 |         2.50 |
+|  clk_IBUF_BUFG       | gs1/next_board[63][7]_i_1_n_0                           |                               |                2 |              5 |         2.50 |
+|  clk_IBUF_BUFG       | gs1/next_board[62][7]_i_1_n_0                           |                               |                3 |              5 |         1.67 |
+|  clk_IBUF_BUFG       | gs1/next_board[6][7]_i_1_n_0                            |                               |                2 |              5 |         2.50 |
+|  clk_IBUF_BUFG       | gs1/next_board[69][7]_i_1_n_0                           |                               |                2 |              5 |         2.50 |
+|  clk_IBUF_BUFG       | gs1/next_board[70][7]_i_1_n_0                           |                               |                2 |              5 |         2.50 |
+|  clk_IBUF_BUFG       | gs1/next_board[11][7]_i_1_n_0                           |                               |                1 |              5 |         5.00 |
+|  clk_IBUF_BUFG       | gs1/next_board[68][7]_i_1_n_0                           |                               |                2 |              5 |         2.50 |
+|  clk_IBUF_BUFG       | gs1/next_board[13][7]_i_1_n_0                           |                               |                2 |              5 |         2.50 |
+|  clk_IBUF_BUFG       | gs1/next_board[72][7]_i_1_n_0                           |                               |                1 |              5 |         5.00 |
+|  clk_IBUF_BUFG       | gs1/next_board[10][7]_i_1_n_0                           |                               |                2 |              5 |         2.50 |
+|  clk_IBUF_BUFG       | gs1/next_board[73][7]_i_1_n_0                           |                               |                2 |              5 |         2.50 |
+|  clk_IBUF_BUFG       | gs1/next_board[75][7]_i_1_n_0                           |                               |                2 |              5 |         2.50 |
+|  clk_IBUF_BUFG       | gs1/next_board[74][7]_i_1_n_0                           |                               |                2 |              5 |         2.50 |
+|  clk_IBUF_BUFG       | gs1/next_board[12][7]_i_1_n_0                           |                               |                2 |              5 |         2.50 |
+|  clk_IBUF_BUFG       | gs1/next_board[71][7]_i_1_n_0                           |                               |                2 |              5 |         2.50 |
+|  clk_IBUF_BUFG       | gs1/next_board[19][7]_i_1_n_0                           |                               |                2 |              5 |         2.50 |
+|  clk_IBUF_BUFG       | gs1/next_board[78][7]_i_1_n_0                           |                               |                2 |              5 |         2.50 |
+|  clk_IBUF_BUFG       | gs1/next_board[15][7]_i_1_n_0                           |                               |                1 |              5 |         5.00 |
+|  clk_IBUF_BUFG       | gs1/next_board[77][7]_i_1_n_0                           |                               |                2 |              5 |         2.50 |
+|  clk_IBUF_BUFG       | gs1/next_board[16][7]_i_1_n_0                           |                               |                2 |              5 |         2.50 |
+|  clk_IBUF_BUFG       | gs1/next_board[76][7]_i_1_n_0                           |                               |                2 |              5 |         2.50 |
+|  clk_IBUF_BUFG       | gs1/next_board[17][7]_i_1_n_0                           |                               |                2 |              5 |         2.50 |
+|  clk_IBUF_BUFG       | gs1/next_board[79][7]_i_1_n_0                           |                               |                2 |              5 |         2.50 |
+|  clk_IBUF_BUFG       | gs1/next_board[18][7]_i_1_n_0                           |                               |                1 |              5 |         5.00 |
+|  clk_IBUF_BUFG       | gs1/next_board[7][7]_i_1_n_0                            |                               |                2 |              5 |         2.50 |
+|  clk_IBUF_BUFG       | gs1/next_board[24][7]_i_1_n_0                           |                               |                2 |              5 |         2.50 |
+|  clk_IBUF_BUFG       | gs1/next_board[81][7]_i_1_n_0                           |                               |                2 |              5 |         2.50 |
+|  clk_IBUF_BUFG       | gs1/next_board[21][7]_i_1_n_0                           |                               |                2 |              5 |         2.50 |
+|  clk_IBUF_BUFG       | gs1/next_board[83][7]_i_1_n_0                           |                               |                2 |              5 |         2.50 |
+|  clk_IBUF_BUFG       | gs1/next_board[23][7]_i_1_n_0                           |                               |                1 |              5 |         5.00 |
+|  clk_IBUF_BUFG       | gs1/next_board[84][7]_i_1_n_0                           |                               |                2 |              5 |         2.50 |
+|  clk_IBUF_BUFG       | gs1/next_board[22][7]_i_1_n_0                           |                               |                2 |              5 |         2.50 |
+|  clk_IBUF_BUFG       | gs1/next_board[82][7]_i_1_n_0                           |                               |                2 |              5 |         2.50 |
+|  clk_IBUF_BUFG       | gs1/next_board[20][7]_i_1_n_0                           |                               |                2 |              5 |         2.50 |
+|  clk_IBUF_BUFG       | gs1/next_board[8][7]_i_1_n_0                            |                               |                2 |              5 |         2.50 |
+|  clk_IBUF_BUFG       | gs1/next_board[28][7]_i_1_n_0                           |                               |                2 |              5 |         2.50 |
+|  clk_IBUF_BUFG       | gs1/next_board[89][7]_i_1_n_0                           |                               |                1 |              5 |         5.00 |
+|  clk_IBUF_BUFG       | gs1/next_board[26][7]_i_1_n_0                           |                               |                1 |              5 |         5.00 |
+|  clk_IBUF_BUFG       | gs1/next_board[85][7]_i_1_n_0                           |                               |                1 |              5 |         5.00 |
+|  clk_IBUF_BUFG       | gs1/next_board[88][7]_i_1_n_0                           |                               |                2 |              5 |         2.50 |
+|  clk_IBUF_BUFG       | gs1/next_board[86][7]_i_1_n_0                           |                               |                2 |              5 |         2.50 |
+|  clk_IBUF_BUFG       | gs1/next_board[25][7]_i_1_n_0                           |                               |                1 |              5 |         5.00 |
+|  clk_IBUF_BUFG       | gs1/next_board[93][7]_i_1_n_0                           |                               |                2 |              5 |         2.50 |
+|  clk_IBUF_BUFG       | gs1/next_board[31][7]_i_1_n_0                           |                               |                1 |              5 |         5.00 |
+|  clk_IBUF_BUFG       | gs1/next_board[94][7]_i_1_n_0                           |                               |                2 |              5 |         2.50 |
+|  clk_IBUF_BUFG       | gs1/next_board[30][7]_i_1_n_0                           |                               |                1 |              5 |         5.00 |
+|  clk_IBUF_BUFG       | gs1/next_board[91][7]_i_1_n_0                           |                               |                2 |              5 |         2.50 |
+|  clk_IBUF_BUFG       | gs1/next_board[92][7]_i_1_n_0                           |                               |                2 |              5 |         2.50 |
+|  clk_IBUF_BUFG       | gs1/next_board[90][7]_i_1_n_0                           |                               |                1 |              5 |         5.00 |
+|  clk_IBUF_BUFG       | gs1/next_board[32][7]_i_1_n_0                           |                               |                2 |              5 |         2.50 |
+|  clk_IBUF_BUFG       | gs1/next_board[97][7]_i_1_n_0                           |                               |                2 |              5 |         2.50 |
+|  clk_IBUF_BUFG       | gs1/next_board[29][7]_i_1_n_0                           |                               |                1 |              5 |         5.00 |
+|  clk_IBUF_BUFG       | gs1/next_board[96][7]_i_1_n_0                           |                               |                2 |              5 |         2.50 |
+|  clk_IBUF_BUFG       | gs1/next_board[38][7]_i_1_n_0                           |                               |                2 |              5 |         2.50 |
+|  clk_IBUF_BUFG       | gs1/next_board[98][7]_i_1_n_0                           |                               |                2 |              5 |         2.50 |
+|  clk_IBUF_BUFG       | gs1/next_board[33][7]_i_1_n_0                           |                               |                2 |              5 |         2.50 |
+|  clk_IBUF_BUFG       | gs1/next_board[99][7]_i_1_n_0                           |                               |                2 |              5 |         2.50 |
+|  clk_IBUF_BUFG       | gs1/next_board[34][7]_i_1_n_0                           |                               |                2 |              5 |         2.50 |
+|  clk_IBUF_BUFG       | gs1/next_board[95][7]_i_1_n_0                           |                               |                2 |              5 |         2.50 |
+|  clk_IBUF_BUFG       | gs1/next_board[37][7]_i_1_n_0                           |                               |                2 |              5 |         2.50 |
+|  clk_IBUF_BUFG       | gs1/next_board[9][7]_i_1_n_0                            |                               |                1 |              5 |         5.00 |
+|  clk_IBUF_BUFG       | gs1/next_board[35][7]_i_1_n_0                           |                               |                2 |              5 |         2.50 |
+|  clk_IBUF_BUFG       | gs1/next_board[42][7]_i_1_n_0                           |                               |                2 |              5 |         2.50 |
+|  clk_IBUF_BUFG       | gs1/next_board[36][7]_i_1_n_0                           |                               |                2 |              5 |         2.50 |
+|  clk_IBUF_BUFG       | gs1/next_board[46][7]_i_1_n_0                           |                               |                1 |              5 |         5.00 |
+|  clk_IBUF_BUFG       | gs1/next_board[40][7]_i_1_n_0                           |                               |                1 |              5 |         5.00 |
+|  clk_IBUF_BUFG       | gs1/next_board[43][7]_i_1_n_0                           |                               |                1 |              5 |         5.00 |
+|  clk_IBUF_BUFG       | gs1/next_board[39][7]_i_1_n_0                           |                               |                3 |              5 |         1.67 |
+|  clk_IBUF_BUFG       | gs1/next_board[45][7]_i_1_n_0                           |                               |                1 |              5 |         5.00 |
+|  clk_IBUF_BUFG       | gs1/next_board[3][7]_i_1_n_0                            |                               |                1 |              5 |         5.00 |
+|  clk_IBUF_BUFG       | gs1/next_board[44][7]_i_1_n_0                           |                               |                2 |              5 |         2.50 |
+|  clk_IBUF_BUFG       | gs1/next_board[56][7]_i_1_n_0                           |                               |                1 |              5 |         5.00 |
+|  clk_IBUF_BUFG       | gs1/next_board[41][7]_i_1_n_0                           |                               |                2 |              5 |         2.50 |
+|  clk_IBUF_BUFG       | gs1/next_board[47][7]_i_1_n_0                           |                               |                2 |              5 |         2.50 |
+|  clk_IBUF_BUFG       | gs1/next_board[57][7]_i_1_n_0                           |                               |                2 |              5 |         2.50 |
+|  clk_IBUF_BUFG       | gs1/next_board[60][7]_i_1_n_0                           |                               |                2 |              5 |         2.50 |
+|  clk_IBUF_BUFG       | gs1/next_board[61][7]_i_1_n_0                           |                               |                2 |              5 |         2.50 |
+|  clk_IBUF_BUFG       | gs1/next_board[4][7]_i_1_n_0                            |                               |                2 |              5 |         2.50 |
+|  clk_IBUF_BUFG       | gs1/next_board[5][7]_i_1_n_0                            |                               |                2 |              5 |         2.50 |
+|  clk_IBUF_BUFG       | gs1/next_board[80][7]_i_2_n_0                           | gs1/next_board[80][7]_i_1_n_0 |                2 |              6 |         3.00 |
+|  clk_IBUF_BUFG       | gs1/next_board[1][7]_i_2_n_0                            | gs1/next_board[1][7]_i_1_n_0  |                2 |              6 |         3.00 |
+|  clk_IBUF_BUFG       | gs1/next_board[48][7]_i_2_n_0                           | gs1/next_board[48][7]_i_1_n_0 |                2 |              6 |         3.00 |
+|  clk_IBUF_BUFG       | gs1/next_board[0][7]_i_2_n_0                            | gs1/next_board[0][7]_i_1_n_0  |                2 |              6 |         3.00 |
+|  clk_IBUF_BUFG       | KeyEv/key_de/inst/inst/Ps2Interface_i/rx_finish         | OP_R/rst                      |                3 |              8 |         2.67 |
+|  clk_IBUF_BUFG       | KeyEv/key_de/inst/inst/Ps2Interface_i/rx_valid          | OP_R/rst                      |                2 |              8 |         4.00 |
+|  clk_IBUF_BUFG       | KeyEv/key_de/next_key                                   | OP_R/rst                      |                3 |              9 |         3.00 |
+|  clk_wiz_0_inst/Q[0] |                                                         | vga_inst/pixel_cnt[9]_i_1_n_0 |                4 |             10 |         2.50 |
+|  clk_wiz_0_inst/Q[0] | vga_inst/line_cnt                                       | vga_inst/line_cnt[9]_i_1_n_0  |                3 |             10 |         3.33 |
+|  clk_IBUF_BUFG       | KeyEv/key_de/inst/inst/Ps2Interface_i/frame[10]_i_1_n_0 | OP_R/rst                      |                2 |             11 |         5.50 |
+|  clk_IBUF_BUFG       |                                                         | gs1/os/counter[0]_i_1_n_0     |                7 |             27 |         3.86 |
+|  clk_IBUF_BUFG       |                                                         | OP_R/rst                      |               18 |             60 |         3.33 |
+|  clk_IBUF_BUFG       |                                                         |                               |               91 |            240 |         2.64 |
+|  clk_IBUF_BUFG       | gs1/os/counter_reg[17]_0[0]                             | OP_R2/SR[0]                   |              222 |            800 |         3.60 |
++----------------------+---------------------------------------------------------+-------------------------------+------------------+----------------+--------------+
+
+
