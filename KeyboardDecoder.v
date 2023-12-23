@@ -55,7 +55,7 @@ module KeyboardEvent(
             KEY_DOWN : state = 4'b0010;
             KEY_LEFT : state = 4'b0100;
             KEY_RIGHT : state = 4'b1000;
-            default : state = state;
+            default : state = 4'b1111;
         endcase
     end
     

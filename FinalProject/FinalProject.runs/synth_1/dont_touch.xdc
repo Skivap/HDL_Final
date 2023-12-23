@@ -3,5 +3,5 @@
 
 # XDC: new/constr.xdc
 
-# IP: ip/KeyboardCtrl_0_1/KeyboardCtrl_0.xci
+# IP: ip/KeyboardCtrl_0_2/KeyboardCtrl_0.xci
 set_property KEEP_HIERARCHY SOFT [get_cells -hier -filter {REF_NAME==KeyboardCtrl_0 || ORIG_REF_NAME==KeyboardCtrl_0} -quiet] -quiet

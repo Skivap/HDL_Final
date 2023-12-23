@@ -93,12 +93,13 @@ read_verilog -library xil_defaultlib {
   C:/Users/User/Documents/College/LDL/FinalProject/KeyboardDecoder.v
   C:/Users/User/Documents/College/LDL/FinalProject/clock_divisor.v
   C:/Users/User/Documents/College/LDL/FinalProject/FinalProject/FinalProject.srcs/sources_1/new/game.v
+  C:/Users/User/Documents/College/LDL/FinalProject/random.v
   C:/Users/User/Documents/College/LDL/FinalProject/FinalProject/FinalProject.srcs/sources_1/new/seven_segment.v
   C:/Users/User/Documents/College/LDL/FinalProject/FinalProject/FinalProject.srcs/sources_1/new/utility.v
   C:/Users/User/Documents/College/LDL/FinalProject/vga.v
   C:/Users/User/Documents/College/LDL/FinalProject/top.v
 }
-read_ip -quiet c:/Users/User/Documents/College/LDL/FinalProject/FinalProject/FinalProject.srcs/sources_1/ip/KeyboardCtrl_0_1/KeyboardCtrl_0.xci
+read_ip -quiet c:/Users/User/Documents/College/LDL/FinalProject/FinalProject/FinalProject.srcs/sources_1/ip/KeyboardCtrl_0_2/KeyboardCtrl_0.xci
 
 OPTRACE "Adding files" END { }
 # Mark all dcp files as not used in implementation to prevent them from being

@@ -1,7 +1,7 @@
 Copyright 1986-2020 Xilinx, Inc. All Rights Reserved.
 -----------------------------------------------------------------------------------------------------------------------------------------------
 | Tool Version : Vivado v.2020.2 (win64) Build 3064766 Wed Nov 18 09:12:45 MST 2020
-| Date         : Thu Dec 21 16:48:57 2023
+| Date         : Sat Dec 23 16:32:22 2023
 | Host         : LAPTOP-T7B654NQ running 64-bit major release  (build 9200)
 | Command      : report_methodology -file top_methodology_drc_routed.rpt -pb top_methodology_drc_routed.pb -rpx top_methodology_drc_routed.rpx
 | Design       : top
@@ -23,13 +23,13 @@ Table of Contents
           Floorplan: design_1
       Design limits: <entire design considered>
              Max violations: <unlimited>
-             Violations found: 45
+             Violations found: 47
 +-----------+------------------+-------------------------------+------------+
 | Rule      | Severity         | Description                   | Violations |
 +-----------+------------------+-------------------------------+------------+
 | TIMING-17 | Critical Warning | Non-clocked sequential cell   | 22         |
-| TIMING-18 | Warning          | Missing input or output delay | 19         |
-| TIMING-20 | Warning          | Non-clocked latch             | 4          |
+| TIMING-18 | Warning          | Missing input or output delay | 23         |
+| TIMING-20 | Warning          | Non-clocked latch             | 2          |
 +-----------+------------------+-------------------------------+------------+
 
 2. REPORT DETAILS
@@ -221,42 +221,52 @@ Related violations: <none>
 
 TIMING-18#16 Warning
 Missing input or output delay  
-An output delay is missing on vgaRed[0] relative to clock(s) sys_clk_pin
+An output delay is missing on vgaBlue[0] relative to clock(s) sys_clk_pin
 Related violations: <none>
 
 TIMING-18#17 Warning
 Missing input or output delay  
-An output delay is missing on vgaRed[1] relative to clock(s) sys_clk_pin
+An output delay is missing on vgaBlue[1] relative to clock(s) sys_clk_pin
 Related violations: <none>
 
 TIMING-18#18 Warning
 Missing input or output delay  
-An output delay is missing on vgaRed[2] relative to clock(s) sys_clk_pin
+An output delay is missing on vgaBlue[2] relative to clock(s) sys_clk_pin
 Related violations: <none>
 
 TIMING-18#19 Warning
+Missing input or output delay  
+An output delay is missing on vgaBlue[3] relative to clock(s) sys_clk_pin
+Related violations: <none>
+
+TIMING-18#20 Warning
+Missing input or output delay  
+An output delay is missing on vgaRed[0] relative to clock(s) sys_clk_pin
+Related violations: <none>
+
+TIMING-18#21 Warning
+Missing input or output delay  
+An output delay is missing on vgaRed[1] relative to clock(s) sys_clk_pin
+Related violations: <none>
+
+TIMING-18#22 Warning
+Missing input or output delay  
+An output delay is missing on vgaRed[2] relative to clock(s) sys_clk_pin
+Related violations: <none>
+
+TIMING-18#23 Warning
 Missing input or output delay  
 An output delay is missing on vgaRed[3] relative to clock(s) sys_clk_pin
 Related violations: <none>
 
 TIMING-20#1 Warning
 Non-clocked latch  
-The latch KeyEv/state_reg[0] cannot be properly analyzed as its control pin KeyEv/state_reg[0]/G is not reached by a timing clock
+The latch gs1/move_reg[0] cannot be properly analyzed as its control pin gs1/move_reg[0]/G is not reached by a timing clock
 Related violations: <none>
 
 TIMING-20#2 Warning
 Non-clocked latch  
-The latch KeyEv/state_reg[1] cannot be properly analyzed as its control pin KeyEv/state_reg[1]/G is not reached by a timing clock
-Related violations: <none>
-
-TIMING-20#3 Warning
-Non-clocked latch  
-The latch KeyEv/state_reg[2] cannot be properly analyzed as its control pin KeyEv/state_reg[2]/G is not reached by a timing clock
-Related violations: <none>
-
-TIMING-20#4 Warning
-Non-clocked latch  
-The latch KeyEv/state_reg[3] cannot be properly analyzed as its control pin KeyEv/state_reg[3]/G is not reached by a timing clock
+The latch gs1/move_reg[1] cannot be properly analyzed as its control pin gs1/move_reg[1]/G is not reached by a timing clock
 Related violations: <none>
 
 
