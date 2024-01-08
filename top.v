@@ -5,6 +5,8 @@ module top(
    inout wire PS2_DATA,
    inout wire PS2_CLK,
    
+   input switch_ai,
+   
    output [6:0] seven_segment,
    output [3:0] an,
    
@@ -51,15 +53,16 @@ module top(
       .clk1(clk_25MHz)
     );
 
-    wire [3:0] x, y;
+    wire [5:0] x, y;
+    wire [5:0] nooral;
+    wire [1:0] move;
     game_single gs1(
-        clk, rst2, state,
+        clk, rst2, rst, state,
         h_cnt, v_cnt, valid,
-        vgaRed, vgaGreen, vgaBlue,
-        x, y
-        
+        vgaRed, vgaGreen, vgaBlue, switch_ai,
+        nooral, move, x, y
     );
-
+    
     vga_controller   vga_inst(
       .pclk(clk_25MHz), // 25 MHz
       .reset(rst),
@@ -82,7 +85,7 @@ module top(
     
     // Seven Segment for debug
     wire [15:0] num;
-    assign num = {state, x, 4'd0, y};
+    assign num = {state, x[3:0], y[3:0], 4'd0};
     
     seven_segment sg(
         .clk(clk),

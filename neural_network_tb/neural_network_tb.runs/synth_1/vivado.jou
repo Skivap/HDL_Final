@@ -1,0 +1,12 @@
+#-----------------------------------------------------------
+# Vivado v2020.2 (64-bit)
+# SW Build 3064766 on Wed Nov 18 09:12:45 MST 2020
+# IP Build 3064653 on Wed Nov 18 14:17:31 MST 2020
+# Start of session at: Mon Jan  8 02:36:53 2024
+# Process ID: 34096
+# Current directory: C:/Users/User/Documents/College/LDL/FinalProject/neural_network_tb/neural_network_tb.runs/synth_1
+# Command line: vivado.exe -log nn_tb.vds -product Vivado -mode batch -messageDb vivado.pb -notrace -source nn_tb.tcl
+# Log file: C:/Users/User/Documents/College/LDL/FinalProject/neural_network_tb/neural_network_tb.runs/synth_1/nn_tb.vds
+# Journal file: C:/Users/User/Documents/College/LDL/FinalProject/neural_network_tb/neural_network_tb.runs/synth_1\vivado.jou
+#-----------------------------------------------------------
+source nn_tb.tcl -notrace

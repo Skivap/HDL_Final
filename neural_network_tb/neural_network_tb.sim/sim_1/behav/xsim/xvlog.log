@@ -1,0 +1,14 @@
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/User/Documents/College/LDL/FinalProject/neural_network.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module neural_network
+INFO: [VRFC 10-311] analyzing module output_node_1
+INFO: [VRFC 10-311] analyzing module output_node_2
+INFO: [VRFC 10-311] analyzing module output_node_3
+INFO: [VRFC 10-311] analyzing module hidden_node_1
+INFO: [VRFC 10-311] analyzing module hidden_node_2
+INFO: [VRFC 10-311] analyzing module hidden_node_3
+INFO: [VRFC 10-311] analyzing module hidden_node_4
+INFO: [VRFC 10-311] analyzing module hidden_node_5
+INFO: [VRFC 10-311] analyzing module hidden_node_6
+INFO: [VRFC 10-311] analyzing module hidden_node_7
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/User/Documents/College/LDL/FinalProject/nn_tb.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module nn_tb

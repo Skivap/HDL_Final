@@ -70,8 +70,9 @@ proc create_report { reportName command } {
   }
 }
 OPTRACE "synth_1" START { ROLLUP_AUTO }
-set_param chipscope.maxJobs 3
+set_param chipscope.maxJobs 1
 set_param xicom.use_bs_reader 1
+set_msg_config -id {Common 17-41} -limit 10000000
 OPTRACE "Creating in-memory project" START { }
 create_project -in_memory -part xc7a35tcpg236-1
 
@@ -92,14 +93,15 @@ OPTRACE "Adding files" START { }
 read_verilog -library xil_defaultlib {
   C:/Users/User/Documents/College/LDL/FinalProject/KeyboardDecoder.v
   C:/Users/User/Documents/College/LDL/FinalProject/clock_divisor.v
-  C:/Users/User/Documents/College/LDL/FinalProject/FinalProject/FinalProject.srcs/sources_1/new/game.v
+  C:/Users/User/Documents/College/LDL/FinalProject/game.v
+  C:/Users/User/Documents/College/LDL/FinalProject/neural_network.v
   C:/Users/User/Documents/College/LDL/FinalProject/random.v
-  C:/Users/User/Documents/College/LDL/FinalProject/FinalProject/FinalProject.srcs/sources_1/new/seven_segment.v
-  C:/Users/User/Documents/College/LDL/FinalProject/FinalProject/FinalProject.srcs/sources_1/new/utility.v
+  C:/Users/User/Documents/College/LDL/FinalProject/seven_segment.v
+  C:/Users/User/Documents/College/LDL/FinalProject/utility.v
   C:/Users/User/Documents/College/LDL/FinalProject/vga.v
   C:/Users/User/Documents/College/LDL/FinalProject/top.v
 }
-read_ip -quiet c:/Users/User/Documents/College/LDL/FinalProject/FinalProject/FinalProject.srcs/sources_1/ip/KeyboardCtrl_0_2/KeyboardCtrl_0.xci
+read_ip -quiet C:/Users/User/Documents/College/LDL/FinalProject/FinalProject/FinalProject.srcs/sources_1/ip/KeyboardCtrl_0_2/KeyboardCtrl_0.xci
 
 OPTRACE "Adding files" END { }
 # Mark all dcp files as not used in implementation to prevent them from being

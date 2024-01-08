@@ -59,3 +59,5 @@ set_property src_info {type:XDC file:1 line:331 export:INPUT save:INPUT read:REA
 set_property PACKAGE_PIN V5 [get_ports {seven_segment[1]}]
 set_property src_info {type:XDC file:1 line:332 export:INPUT save:INPUT read:READ} [current_design]
 set_property PACKAGE_PIN U7 [get_ports {seven_segment[0]}]
+set_property src_info {type:XDC file:1 line:334 export:INPUT save:INPUT read:READ} [current_design]
+set_property PACKAGE_PIN V17 [get_ports switch_ai]

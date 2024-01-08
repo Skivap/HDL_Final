@@ -330,3 +330,6 @@ set_property PACKAGE_PIN V8 [get_ports {seven_segment[3]}]
 set_property PACKAGE_PIN U5 [get_ports {seven_segment[2]}]
 set_property PACKAGE_PIN V5 [get_ports {seven_segment[1]}]
 set_property PACKAGE_PIN U7 [get_ports {seven_segment[0]}]
+
+set_property PACKAGE_PIN V17 [get_ports switch_ai]
+set_property IOSTANDARD LVCMOS33 [get_ports switch_ai]

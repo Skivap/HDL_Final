@@ -1,0 +1,46 @@
+Vivado Simulator 2020.2
+Copyright 1986-1999, 2001-2020 Xilinx, Inc. All Rights Reserved.
+Running: C:/Xilinx/Vivado/2020.2/bin/unwrapped/win64.o/xelab.exe -wto e8746bc50a0048cea540e916cef68f6a --incr --debug typical --relax --mt 2 -L xil_defaultlib -L unisims_ver -L unimacro_ver -L secureip --snapshot nn_tb_behav xil_defaultlib.nn_tb xil_defaultlib.glbl -log elaborate.log 
+Using 2 slave threads.
+Starting static elaboration
+Pass Through NonSizing Optimizer
+Completed static elaboration
+Starting simulation data flow analysis
+WARNING: [XSIM 43-4099] "C:/Users/User/Documents/College/LDL/FinalProject/neural_network.v" Line 1. Module neural_network doesn't have a timescale but at least one module in design has a timescale.
+WARNING: [XSIM 43-4099] "C:/Users/User/Documents/College/LDL/FinalProject/neural_network.v" Line 83. Module hidden_node_1 doesn't have a timescale but at least one module in design has a timescale.
+WARNING: [XSIM 43-4099] "C:/Users/User/Documents/College/LDL/FinalProject/neural_network.v" Line 97. Module hidden_node_2 doesn't have a timescale but at least one module in design has a timescale.
+WARNING: [XSIM 43-4099] "C:/Users/User/Documents/College/LDL/FinalProject/neural_network.v" Line 110. Module hidden_node_3 doesn't have a timescale but at least one module in design has a timescale.
+WARNING: [XSIM 43-4099] "C:/Users/User/Documents/College/LDL/FinalProject/neural_network.v" Line 123. Module hidden_node_4 doesn't have a timescale but at least one module in design has a timescale.
+WARNING: [XSIM 43-4099] "C:/Users/User/Documents/College/LDL/FinalProject/neural_network.v" Line 136. Module hidden_node_5 doesn't have a timescale but at least one module in design has a timescale.
+WARNING: [XSIM 43-4099] "C:/Users/User/Documents/College/LDL/FinalProject/neural_network.v" Line 149. Module hidden_node_6 doesn't have a timescale but at least one module in design has a timescale.
+WARNING: [XSIM 43-4099] "C:/Users/User/Documents/College/LDL/FinalProject/neural_network.v" Line 162. Module hidden_node_7 doesn't have a timescale but at least one module in design has a timescale.
+WARNING: [XSIM 43-4099] "C:/Users/User/Documents/College/LDL/FinalProject/neural_network.v" Line 41. Module output_node_1 doesn't have a timescale but at least one module in design has a timescale.
+WARNING: [XSIM 43-4099] "C:/Users/User/Documents/College/LDL/FinalProject/neural_network.v" Line 55. Module output_node_2 doesn't have a timescale but at least one module in design has a timescale.
+WARNING: [XSIM 43-4099] "C:/Users/User/Documents/College/LDL/FinalProject/neural_network.v" Line 69. Module output_node_3 doesn't have a timescale but at least one module in design has a timescale.
+WARNING: [XSIM 43-4099] "C:/Users/User/Documents/College/LDL/FinalProject/neural_network.v" Line 1. Module neural_network doesn't have a timescale but at least one module in design has a timescale.
+WARNING: [XSIM 43-4099] "C:/Users/User/Documents/College/LDL/FinalProject/neural_network.v" Line 83. Module hidden_node_1 doesn't have a timescale but at least one module in design has a timescale.
+WARNING: [XSIM 43-4099] "C:/Users/User/Documents/College/LDL/FinalProject/neural_network.v" Line 97. Module hidden_node_2 doesn't have a timescale but at least one module in design has a timescale.
+WARNING: [XSIM 43-4099] "C:/Users/User/Documents/College/LDL/FinalProject/neural_network.v" Line 110. Module hidden_node_3 doesn't have a timescale but at least one module in design has a timescale.
+WARNING: [XSIM 43-4099] "C:/Users/User/Documents/College/LDL/FinalProject/neural_network.v" Line 123. Module hidden_node_4 doesn't have a timescale but at least one module in design has a timescale.
+WARNING: [XSIM 43-4099] "C:/Users/User/Documents/College/LDL/FinalProject/neural_network.v" Line 136. Module hidden_node_5 doesn't have a timescale but at least one module in design has a timescale.
+WARNING: [XSIM 43-4099] "C:/Users/User/Documents/College/LDL/FinalProject/neural_network.v" Line 149. Module hidden_node_6 doesn't have a timescale but at least one module in design has a timescale.
+WARNING: [XSIM 43-4099] "C:/Users/User/Documents/College/LDL/FinalProject/neural_network.v" Line 162. Module hidden_node_7 doesn't have a timescale but at least one module in design has a timescale.
+WARNING: [XSIM 43-4099] "C:/Users/User/Documents/College/LDL/FinalProject/neural_network.v" Line 41. Module output_node_1 doesn't have a timescale but at least one module in design has a timescale.
+WARNING: [XSIM 43-4099] "C:/Users/User/Documents/College/LDL/FinalProject/neural_network.v" Line 55. Module output_node_2 doesn't have a timescale but at least one module in design has a timescale.
+WARNING: [XSIM 43-4099] "C:/Users/User/Documents/College/LDL/FinalProject/neural_network.v" Line 69. Module output_node_3 doesn't have a timescale but at least one module in design has a timescale.
+Completed simulation data flow analysis
+Time Resolution for simulation is 1ps
+Compiling module xil_defaultlib.hidden_node_1
+Compiling module xil_defaultlib.hidden_node_2
+Compiling module xil_defaultlib.hidden_node_3
+Compiling module xil_defaultlib.hidden_node_4
+Compiling module xil_defaultlib.hidden_node_5
+Compiling module xil_defaultlib.hidden_node_6
+Compiling module xil_defaultlib.hidden_node_7
+Compiling module xil_defaultlib.output_node_1
+Compiling module xil_defaultlib.output_node_2
+Compiling module xil_defaultlib.output_node_3
+Compiling module xil_defaultlib.neural_network
+Compiling module xil_defaultlib.nn_tb
+Compiling module xil_defaultlib.glbl
+Built simulation snapshot nn_tb_behav
