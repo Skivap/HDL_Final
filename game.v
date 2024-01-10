@@ -767,6 +767,9 @@ module game_single(
             else
                 pixel = 12'h9DE;
         end
+        else if(switch) begin
+            pixel = 12'h9DE;
+        end
         else if(h_cnt >= 340 && v_cnt >= 40 && v_cnt < 440) begin
             if(h_cnt >= 359 && h_cnt < 391) begin
                 if(v_cnt >= 79 && v_cnt < 111)

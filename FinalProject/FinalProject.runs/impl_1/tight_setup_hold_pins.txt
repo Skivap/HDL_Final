@@ -1,28 +1,5 @@
 +--------------------------+--------------------------+----------------------------------------------------------------------------------------------------------+
 |       Launch Clock       |      Capture Clock       |                                                 Pin                                                      |
 +--------------------------+--------------------------+----------------------------------------------------------------------------------------------------------+
-|              sys_clk_pin |              sys_clk_pin |                                                                                         gs1/move_reg[0]/D|
-|              sys_clk_pin |              sys_clk_pin |                                                                      gs1/genblk1[351].board_reg[351][8]/D|
-|              sys_clk_pin |              sys_clk_pin |                                                                        gs1/genblk1[81].board_reg[81][4]/D|
-|              sys_clk_pin |              sys_clk_pin |                                                                        gs1/genblk1[81].board_reg[81][5]/D|
-|              sys_clk_pin |              sys_clk_pin |                                                                        gs1/genblk1[81].board_reg[81][8]/D|
-|              sys_clk_pin |              sys_clk_pin |                                                                        gs1/genblk1[81].board_reg[81][6]/D|
-|              sys_clk_pin |              sys_clk_pin |                                                                      gs1/genblk1[122].board_reg[122][8]/D|
-|              sys_clk_pin |              sys_clk_pin |                                                                        gs1/genblk1[81].board_reg[81][3]/D|
-|              sys_clk_pin |              sys_clk_pin |                                                                        gs1/genblk1[81].board_reg[81][7]/D|
-|              sys_clk_pin |              sys_clk_pin |                                                                      gs1/genblk1[396].board_reg[396][7]/D|
-|              sys_clk_pin |              sys_clk_pin |                                                                      gs1/genblk1[115].board_reg[115][8]/D|
-|              sys_clk_pin |              sys_clk_pin |                                                                      gs1/genblk1[115].board_reg[115][7]/D|
-|              sys_clk_pin |              sys_clk_pin |                                                                        gs1/genblk1[87].board_reg[87][3]/D|
-|              sys_clk_pin |              sys_clk_pin |                                                                        gs1/genblk1[87].board_reg[87][2]/D|
-|              sys_clk_pin |              sys_clk_pin |                                                                        gs1/genblk1[93].board_reg[93][3]/D|
-|              sys_clk_pin |              sys_clk_pin |                                                                      gs1/genblk1[394].board_reg[394][6]/D|
-|              sys_clk_pin |              sys_clk_pin |                                                                      gs1/genblk1[396].board_reg[396][8]/D|
-|              sys_clk_pin |              sys_clk_pin |                                                                      gs1/genblk1[119].board_reg[119][2]/D|
-|              sys_clk_pin |              sys_clk_pin |                                                                      gs1/genblk1[394].board_reg[394][7]/D|
-|              sys_clk_pin |              sys_clk_pin |                                                                      gs1/genblk1[394].board_reg[394][5]/D|
-|              sys_clk_pin |              sys_clk_pin |                                                                      gs1/genblk1[119].board_reg[119][4]/D|
-|              sys_clk_pin |              sys_clk_pin |                                                                      gs1/genblk1[119].board_reg[119][5]/D|
-|              sys_clk_pin |              sys_clk_pin |                                                                      gs1/genblk1[115].board_reg[115][6]/D|
-|              sys_clk_pin |              sys_clk_pin |                                                                      gs1/genblk1[119].board_reg[119][3]/D|
+|              sys_clk_pin |              sys_clk_pin |                                                                                       gs1/game_over_reg/D|
 +--------------------------+--------------------------+----------------------------------------------------------------------------------------------------------+
