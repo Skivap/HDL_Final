@@ -494,7 +494,7 @@ module game_single(
    
    always@(*) begin
         if(v_cnt >= 40 && v_cnt < 440 && h_cnt >= 340)
-            pixel_addr_model = ((h_cnt - 340) + (v_cnt - 40) * 300) % 120000;
+            pixel_addr_model = (((h_cnt - 340)>>1) + ((v_cnt - 40)>>1) * 150) % 30000;
         else 
             pixel_addr_model = 0;
    end
@@ -720,6 +720,27 @@ module game_single(
       .dina(data),
       .douta(pixel_model)
     );
+    
+    wire e;
+    wire [11:0] apple_pix;
+    reg [5:0] ax, ay;
+    always@(*) begin
+        if(coordinate_pixel == apple) begin
+            ay = (h_cnt-20) % 15;
+            ax = (v_cnt-90) % 15;
+        end
+        else begin
+            ax = 0;
+            ay = 0;
+        end
+    end
+    
+    assign e = (x_c + y_c) % 2 == 0 ? 1 : 0;
+    pixel_apple pa(
+        clk, one_sec, rst,
+        ax, ay, e,
+        apple_pix
+    );
    
    // Rendering
    always @(*) begin
@@ -731,7 +752,7 @@ module game_single(
                     pixel = snake_color;
                 end
                 else if(coordinate_pixel == apple)
-                    pixel = 12'h888;
+                    pixel = apple_pix; //12'h888;
                 else if((x_c + y_c) % 2 == 0)
                     pixel = 12'h4A0;
                 else
@@ -912,3 +933,205 @@ module pixel_node(
         end
     end
 endmodule
+
+module pixel_apple(
+    input clk, 
+    input os,
+    input rst,
+    input [5:0] ori_x,
+    input [5:0] ori_y,
+    input e,
+    output reg [11:0] out
+);
+    
+    reg [2:0] bounce;
+    reg dir;
+    wire [5:0] x, y;
+    assign x = ori_x + bounce;
+    assign y = ori_y;// + bounce;
+    
+    always@(posedge clk) begin
+        if(rst) begin
+            dir <= 0;
+            bounce <= 0;
+        end
+        else begin
+            if(os) begin
+            if(!dir) begin
+                if(bounce >= 3) begin
+                    dir <= 1;
+                    bounce <= 2;
+                end
+                else begin
+                    bounce <= bounce + 1;
+                end
+            end
+            else begin
+                if(bounce == 0) begin
+                    dir <= 0;
+                    bounce <= 1;
+                end
+                else begin
+                    bounce <= bounce - 1;
+                end
+            end
+            end
+        end
+    end
+    
+    always@(*) begin
+        case(x) 
+            3: begin
+                if(y == 5)
+                    out = 12'h000;
+                else if(y >= 7 && y <= 10)
+                    out = 12'h000;
+                else if(e)
+                    out = 12'h4A0;
+                else
+                    out = 12'h8A0;
+            end
+            4: begin
+               if(y >= 7 && y <= 10)
+                    out = 12'h2A4;
+               else if(y >= 6 && y <= 11)
+                    out = 12'h000;
+               else if(e)
+                    out = 12'h4A0;
+                else
+                    out = 12'h8A0;
+            end
+            5: begin
+                if(y >= 3 && y <= 10)
+                    out = 12'h000;
+                else if(e)
+                    out = 12'h4A0;
+                else
+                    out = 12'h8A0;
+            end
+            6: begin
+                if(y == 10)
+                    out = 12'h512;
+                else if(y == 9 || y == 8)
+                    out = 12'h712;
+                else if(y >= 3 && y <= 5)
+                    out = 12'hb12;
+                else if(y >= 2 && y <= 11)
+                    out = 12'h000;
+                else if(e)
+                    out = 12'h4A0;
+                else
+                    out = 12'h8A0;
+            end
+            7: begin
+                if(y == 3)
+                    out = 12'hfff;
+                else if(y >= 2 && y <= 6)
+                    out = 12'hb12;
+                else if(y >= 7 && y <= 10)
+                    out = 12'h712;
+                else if(y == 11)
+                    out = 12'h512;
+                else if(y == 1 || y == 12)
+                    out = 12'h000;
+                else if(e)
+                    out = 12'h4A0;
+                else
+                    out = 12'h8A0;
+            end
+            8: begin
+                if(y >= 2 && y <= 8)
+                    out = 12'hb12;
+                else if(y == 9 || y == 10)
+                    out = 12'h712;
+                else if(y == 11)
+                    out = 12'h512;
+                else if(y == 1 || y == 12)
+                    out = 12'h000;
+                else if(e)
+                    out = 12'h4A0;
+                else
+                    out = 12'h8A0;
+            end
+            9: begin
+                if(y >= 2 && y <= 8)
+                    out = 12'hb12;
+                else if(y == 9 || y == 10)
+                    out = 12'h712;
+                else if(y == 11)
+                    out = 12'h512;
+                else if(y == 1 || y == 12)
+                    out = 12'h000;
+                else if(e)
+                    out = 12'h4A0;
+                else
+                    out = 12'h8A0;
+            end
+            10: begin
+                if(y >= 2 && y <= 8)
+                    out = 12'hb12;
+                else if(y == 9 || y == 10)
+                    out = 12'h712;
+                else if(y == 11)
+                    out = 12'h512;
+                else if(y == 1 || y == 12)
+                    out = 12'h000;
+                else if(e)
+                    out = 12'h4A0;
+                else
+                    out = 12'h8A0;
+            end
+            11: begin
+                if(y >= 3 && y <= 7)
+                    out = 12'hb12;
+                else if(y >= 8 && y <= 10)
+                    out = 12'h712;
+                else if(y == 2 || y == 11)
+                    out = 12'h000;
+                else if(e)
+                    out = 12'h4A0;
+                else
+                    out = 12'h8A0;
+            end
+            12: begin
+                if(y >= 3 && y <= 6)
+                    out = 12'hb12;
+                else if(y >= 7 && y <= 9)
+                    out = 12'h712;
+                else if(y == 10)
+                    out = 12'h512;
+                else if(y == 2 || y == 11)
+                    out = 12'h000;
+                else if(e)
+                    out = 12'h4A0;
+                else
+                    out = 12'h8A0;
+            end
+            13: begin
+                if(y >= 5 && y <= 8)
+                    out = 12'h512;
+                else if (y >= 3 && y <= 10)
+                    out = 12'h000;
+                else if(e)
+                    out = 12'h4A0;
+                else
+                    out = 12'h8A0;
+            end
+            14: begin
+                if(y >= 5 && y <= 8)
+                    out = 12'h000;
+                else if(e)
+                    out = 12'h4A0;
+                else
+                    out = 12'h8A0;
+            end
+            default: begin
+                if(e)
+                    out = 12'h4A0;
+                else
+                    out = 12'h8A0;
+            end
+        endcase
+    end
+endmodule
+

@@ -92,6 +92,8 @@ set_property ip_cache_permissions {read write} [current_project]
 OPTRACE "Creating in-memory project" END { }
 OPTRACE "Adding files" START { }
 add_files c:/Users/User/Documents/College/LDL/FinalProject/coefile/model.coe
+add_files c:/Users/User/Documents/College/LDL/FinalProject/coefile/model_new.coe
+add_files c:/Users/User/Documents/College/LDL/FinalProject/coefile/model_new_new.coe
 read_verilog -library xil_defaultlib {
   C:/Users/User/Documents/College/LDL/FinalProject/KeyboardDecoder.v
   C:/Users/User/Documents/College/LDL/FinalProject/clock_divisor.v
