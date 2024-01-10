@@ -10,7 +10,19 @@ module neural_network(
 //    output [23:0] out2,
 //    output [23:0] out3,
     
-    output [1:0] move
+    output [1:0] move,
+    
+    output reg [3:0] h1,
+    output reg [3:0] h2,
+    output reg [3:0] h3,
+    output reg [3:0] h4,
+    output reg [3:0] h5,
+    output reg [3:0] h6,
+    output reg [3:0] h7,
+    
+    output reg [3:0] c1,
+    output reg [3:0] c2,
+    output reg [3:0] c3
 );
     wire [25:0] out1;
     wire [25:0] out2;
@@ -36,6 +48,63 @@ module neural_network(
             out1 > out3 ?
                 0 : 2
            : out2 > out3 ? 1 : 2;
+           
+    always@(*) begin
+        if(out1 / 240 > 12)
+            c1 = 12;
+        else
+            c1 = out1 / 240;
+        if(out2 / 240 > 12)
+            c2 = 12;
+        else
+            c2 = out2 / 240;
+        if(out3 / 240 > 12)
+            c3 = 12;
+        else
+            c3 = out3 / 240;
+        
+        // Calculate h1 based on r1
+        if (r1 / 60 > 12)
+            h1 = 12;
+        else
+            h1 = r1 / 60;
+        
+        // Calculate h2 based on r2
+        if (r2 / 60 > 12)
+            h2 = 12;
+        else
+            h2 = r2 / 60;
+        
+        // Calculate h3 based on r3
+        if (r3 / 60 > 12)
+            h3 = 12;
+        else
+            h3 = r3 / 60;
+        
+        // Calculate h4 based on r4
+        if (r4 / 60 > 12)
+            h4 = 12;
+        else
+            h4 = r4 / 60;
+        
+        // Calculate h5 based on r5
+        if (r5 / 60 > 12)
+            h5 = 12;
+        else
+            h5 = r5 / 60;
+        
+        // Calculate h6 based on r6
+        if (r6 / 60 > 12)
+            h6 = 12;
+        else
+            h6 = r6 / 60;
+        
+        // Calculate h7 based on r7
+        if (r7 / 60 > 12)
+            h7 = 12;
+        else
+            h7 = r7 / 60;
+    end
 endmodule
 
 module output_node_1(

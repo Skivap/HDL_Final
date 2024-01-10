@@ -5,3 +5,8 @@
 
 # IP: ip/KeyboardCtrl_0_2/KeyboardCtrl_0.xci
 set_property KEEP_HIERARCHY SOFT [get_cells -hier -filter {REF_NAME==KeyboardCtrl_0 || ORIG_REF_NAME==KeyboardCtrl_0} -quiet] -quiet
+
+# IP: ip/blk_mem_gen_0_1/blk_mem_gen_0.xci
+set_property KEEP_HIERARCHY SOFT [get_cells -hier -filter {REF_NAME==blk_mem_gen_0 || ORIG_REF_NAME==blk_mem_gen_0} -quiet] -quiet
+
+# XDC: c:/Users/User/Documents/College/LDL/FinalProject/FinalProject/FinalProject.gen/sources_1/ip/blk_mem_gen_0_8/blk_mem_gen_0_ooc.xdc

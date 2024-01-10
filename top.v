@@ -48,13 +48,13 @@ module top(
     wire [9:0] v_cnt;  //480
     wire [3:0] state;
 
-    clock_divisor clk_wiz_0_inst(
+    clock_divisor_25MHz clk_wiz_0_inst(
       .clk(clk),
       .clk1(clk_25MHz)
     );
 
     wire [5:0] x, y;
-    wire [5:0] nooral;
+    wire [7:0] nooral;
     wire [1:0] move;
     game_single gs1(
         clk, rst2, rst, state,
@@ -85,7 +85,7 @@ module top(
     
     // Seven Segment for debug
     wire [15:0] num;
-    assign num = {state, x[3:0], y[3:0], 4'd0};
+    assign num = {x[3:0], y[3:0], 2'd0, nooral};
     
     seven_segment sg(
         .clk(clk),
