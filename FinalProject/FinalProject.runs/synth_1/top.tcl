@@ -72,7 +72,6 @@ proc create_report { reportName command } {
 OPTRACE "synth_1" START { ROLLUP_AUTO }
 set_param chipscope.maxJobs 1
 set_param xicom.use_bs_reader 1
-set_msg_config -id {Common 17-41} -limit 10000000
 OPTRACE "Creating in-memory project" START { }
 create_project -in_memory -part xc7a35tcpg236-1
 
@@ -91,9 +90,9 @@ set_property ip_output_repo c:/Users/User/Documents/College/LDL/FinalProject/Fin
 set_property ip_cache_permissions {read write} [current_project]
 OPTRACE "Creating in-memory project" END { }
 OPTRACE "Adding files" START { }
-add_files c:/Users/User/Documents/College/LDL/FinalProject/coefile/model.coe
-add_files c:/Users/User/Documents/College/LDL/FinalProject/coefile/model_new.coe
-add_files c:/Users/User/Documents/College/LDL/FinalProject/coefile/model_new_new.coe
+add_files C:/Users/User/Documents/College/LDL/FinalProject/coefile/model.coe
+add_files C:/Users/User/Documents/College/LDL/FinalProject/coefile/model_new.coe
+add_files C:/Users/User/Documents/College/LDL/FinalProject/coefile/model_new_new.coe
 read_verilog -library xil_defaultlib {
   C:/Users/User/Documents/College/LDL/FinalProject/KeyboardDecoder.v
   C:/Users/User/Documents/College/LDL/FinalProject/clock_divisor.v
@@ -107,7 +106,7 @@ read_verilog -library xil_defaultlib {
 }
 read_ip -quiet C:/Users/User/Documents/College/LDL/FinalProject/FinalProject/FinalProject.srcs/sources_1/ip/KeyboardCtrl_0_2/KeyboardCtrl_0.xci
 
-read_ip -quiet c:/Users/User/Documents/College/LDL/FinalProject/FinalProject/FinalProject.srcs/sources_1/ip/blk_mem_gen_0_1/blk_mem_gen_0.xci
+read_ip -quiet C:/Users/User/Documents/College/LDL/FinalProject/FinalProject/FinalProject.srcs/sources_1/ip/blk_mem_gen_0_1/blk_mem_gen_0.xci
 set_property used_in_implementation false [get_files -all c:/Users/User/Documents/College/LDL/FinalProject/FinalProject/FinalProject.gen/sources_1/ip/blk_mem_gen_0_8/blk_mem_gen_0_ooc.xdc]
 
 OPTRACE "Adding files" END { }

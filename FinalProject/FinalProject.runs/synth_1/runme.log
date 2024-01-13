@@ -22,9 +22,9 @@ INFO: [Common 17-349] Got license for feature 'Synthesis' and/or device 'xc7a35t
 INFO: [Device 21-403] Loading part xc7a35tcpg236-1
 INFO: [Synth 8-7079] Multithreading enabled for synth_design using a maximum of 2 processes.
 INFO: [Synth 8-7078] Launching helper process for spawning children vivado processes
-INFO: [Synth 8-7075] Helper process launched with PID 59880
+INFO: [Synth 8-7075] Helper process launched with PID 41640
 ---------------------------------------------------------------------------------
-Starting RTL Elaboration : Time (s): cpu = 00:00:03 ; elapsed = 00:00:04 . Memory (MB): peak = 1014.332 ; gain = 0.000
+Starting RTL Elaboration : Time (s): cpu = 00:00:04 ; elapsed = 00:00:04 . Memory (MB): peak = 1015.219 ; gain = 0.000
 ---------------------------------------------------------------------------------
 INFO: [Synth 8-6157] synthesizing module 'top' [C:/Users/User/Documents/College/LDL/FinalProject/top.v:1]
 INFO: [Synth 8-6157] synthesizing module 'Debounce' [C:/Users/User/Documents/College/LDL/FinalProject/utility.v:18]
@@ -33,8 +33,6 @@ INFO: [Synth 8-6157] synthesizing module 'OnePulse' [C:/Users/User/Documents/Col
 INFO: [Synth 8-6155] done synthesizing module 'OnePulse' (2#1) [C:/Users/User/Documents/College/LDL/FinalProject/utility.v:1]
 INFO: [Synth 8-6157] synthesizing module 'clock_divisor_25MHz' [C:/Users/User/Documents/College/LDL/FinalProject/clock_divisor.v:57]
 INFO: [Synth 8-6155] done synthesizing module 'clock_divisor_25MHz' (3#1) [C:/Users/User/Documents/College/LDL/FinalProject/clock_divisor.v:57]
-WARNING: [Synth 8-7071] port 'clk22' of module 'clock_divisor_25MHz' is unconnected for instance 'clk_wiz_0_inst' [C:/Users/User/Documents/College/LDL/FinalProject/top.v:51]
-WARNING: [Synth 8-7023] instance 'clk_wiz_0_inst' of module 'clock_divisor_25MHz' has 3 connections declared, but only 2 given [C:/Users/User/Documents/College/LDL/FinalProject/top.v:51]
 INFO: [Synth 8-6157] synthesizing module 'game_single' [C:/Users/User/Documents/College/LDL/FinalProject/game.v:1]
 	Parameter up_ bound to: 2'b00 
 	Parameter down_ bound to: 2'b01 
@@ -44,36 +42,40 @@ INFO: [Synth 8-6157] synthesizing module 'one_second' [C:/Users/User/Documents/C
 INFO: [Synth 8-6155] done synthesizing module 'one_second' (4#1) [C:/Users/User/Documents/College/LDL/FinalProject/clock_divisor.v:17]
 INFO: [Synth 8-6157] synthesizing module 'frame_counter' [C:/Users/User/Documents/College/LDL/FinalProject/clock_divisor.v:37]
 INFO: [Synth 8-6155] done synthesizing module 'frame_counter' (5#1) [C:/Users/User/Documents/College/LDL/FinalProject/clock_divisor.v:37]
-INFO: [Synth 8-155] case statement is not full and has no default [C:/Users/User/Documents/College/LDL/FinalProject/game.v:79]
-INFO: [Synth 8-155] case statement is not full and has no default [C:/Users/User/Documents/College/LDL/FinalProject/game.v:87]
+INFO: [Synth 8-226] default block is never used [C:/Users/User/Documents/College/LDL/FinalProject/game.v:52]
+INFO: [Synth 8-226] default block is never used [C:/Users/User/Documents/College/LDL/FinalProject/game.v:61]
+INFO: [Synth 8-226] default block is never used [C:/Users/User/Documents/College/LDL/FinalProject/game.v:70]
+INFO: [Synth 8-155] case statement is not full and has no default [C:/Users/User/Documents/College/LDL/FinalProject/game.v:84]
+INFO: [Synth 8-155] case statement is not full and has no default [C:/Users/User/Documents/College/LDL/FinalProject/game.v:92]
 INFO: [Synth 8-6157] synthesizing module 'random' [C:/Users/User/Documents/College/LDL/FinalProject/random.v:1]
 INFO: [Synth 8-6155] done synthesizing module 'random' (6#1) [C:/Users/User/Documents/College/LDL/FinalProject/random.v:1]
 INFO: [Synth 8-6157] synthesizing module 'neural_network' [C:/Users/User/Documents/College/LDL/FinalProject/neural_network.v:1]
-INFO: [Synth 8-6157] synthesizing module 'hidden_node_1' [C:/Users/User/Documents/College/LDL/FinalProject/neural_network.v:152]
-INFO: [Synth 8-6155] done synthesizing module 'hidden_node_1' (7#1) [C:/Users/User/Documents/College/LDL/FinalProject/neural_network.v:152]
-INFO: [Synth 8-6157] synthesizing module 'hidden_node_2' [C:/Users/User/Documents/College/LDL/FinalProject/neural_network.v:166]
-INFO: [Synth 8-6155] done synthesizing module 'hidden_node_2' (8#1) [C:/Users/User/Documents/College/LDL/FinalProject/neural_network.v:166]
-INFO: [Synth 8-6157] synthesizing module 'hidden_node_3' [C:/Users/User/Documents/College/LDL/FinalProject/neural_network.v:179]
-INFO: [Synth 8-6155] done synthesizing module 'hidden_node_3' (9#1) [C:/Users/User/Documents/College/LDL/FinalProject/neural_network.v:179]
-INFO: [Synth 8-6157] synthesizing module 'hidden_node_4' [C:/Users/User/Documents/College/LDL/FinalProject/neural_network.v:192]
-INFO: [Synth 8-6155] done synthesizing module 'hidden_node_4' (10#1) [C:/Users/User/Documents/College/LDL/FinalProject/neural_network.v:192]
-INFO: [Synth 8-6157] synthesizing module 'hidden_node_5' [C:/Users/User/Documents/College/LDL/FinalProject/neural_network.v:205]
-INFO: [Synth 8-6155] done synthesizing module 'hidden_node_5' (11#1) [C:/Users/User/Documents/College/LDL/FinalProject/neural_network.v:205]
-INFO: [Synth 8-6157] synthesizing module 'hidden_node_6' [C:/Users/User/Documents/College/LDL/FinalProject/neural_network.v:218]
-INFO: [Synth 8-6155] done synthesizing module 'hidden_node_6' (12#1) [C:/Users/User/Documents/College/LDL/FinalProject/neural_network.v:218]
-INFO: [Synth 8-6157] synthesizing module 'hidden_node_7' [C:/Users/User/Documents/College/LDL/FinalProject/neural_network.v:231]
-INFO: [Synth 8-6155] done synthesizing module 'hidden_node_7' (13#1) [C:/Users/User/Documents/College/LDL/FinalProject/neural_network.v:231]
-INFO: [Synth 8-6157] synthesizing module 'output_node_1' [C:/Users/User/Documents/College/LDL/FinalProject/neural_network.v:110]
-INFO: [Synth 8-6155] done synthesizing module 'output_node_1' (14#1) [C:/Users/User/Documents/College/LDL/FinalProject/neural_network.v:110]
-INFO: [Synth 8-6157] synthesizing module 'output_node_2' [C:/Users/User/Documents/College/LDL/FinalProject/neural_network.v:124]
-INFO: [Synth 8-6155] done synthesizing module 'output_node_2' (15#1) [C:/Users/User/Documents/College/LDL/FinalProject/neural_network.v:124]
-INFO: [Synth 8-6157] synthesizing module 'output_node_3' [C:/Users/User/Documents/College/LDL/FinalProject/neural_network.v:138]
-INFO: [Synth 8-6155] done synthesizing module 'output_node_3' (16#1) [C:/Users/User/Documents/College/LDL/FinalProject/neural_network.v:138]
+INFO: [Synth 8-6157] synthesizing module 'hidden_node_1' [C:/Users/User/Documents/College/LDL/FinalProject/neural_network.v:180]
+INFO: [Synth 8-6155] done synthesizing module 'hidden_node_1' (7#1) [C:/Users/User/Documents/College/LDL/FinalProject/neural_network.v:180]
+INFO: [Synth 8-6157] synthesizing module 'hidden_node_2' [C:/Users/User/Documents/College/LDL/FinalProject/neural_network.v:197]
+INFO: [Synth 8-6155] done synthesizing module 'hidden_node_2' (8#1) [C:/Users/User/Documents/College/LDL/FinalProject/neural_network.v:197]
+INFO: [Synth 8-6157] synthesizing module 'hidden_node_3' [C:/Users/User/Documents/College/LDL/FinalProject/neural_network.v:213]
+INFO: [Synth 8-6155] done synthesizing module 'hidden_node_3' (9#1) [C:/Users/User/Documents/College/LDL/FinalProject/neural_network.v:213]
+INFO: [Synth 8-6157] synthesizing module 'hidden_node_4' [C:/Users/User/Documents/College/LDL/FinalProject/neural_network.v:229]
+INFO: [Synth 8-6155] done synthesizing module 'hidden_node_4' (10#1) [C:/Users/User/Documents/College/LDL/FinalProject/neural_network.v:229]
+INFO: [Synth 8-6157] synthesizing module 'hidden_node_5' [C:/Users/User/Documents/College/LDL/FinalProject/neural_network.v:245]
+INFO: [Synth 8-6155] done synthesizing module 'hidden_node_5' (11#1) [C:/Users/User/Documents/College/LDL/FinalProject/neural_network.v:245]
+INFO: [Synth 8-6157] synthesizing module 'hidden_node_6' [C:/Users/User/Documents/College/LDL/FinalProject/neural_network.v:261]
+INFO: [Synth 8-6155] done synthesizing module 'hidden_node_6' (12#1) [C:/Users/User/Documents/College/LDL/FinalProject/neural_network.v:261]
+INFO: [Synth 8-6157] synthesizing module 'hidden_node_7' [C:/Users/User/Documents/College/LDL/FinalProject/neural_network.v:277]
+INFO: [Synth 8-6155] done synthesizing module 'hidden_node_7' (13#1) [C:/Users/User/Documents/College/LDL/FinalProject/neural_network.v:277]
+INFO: [Synth 8-6157] synthesizing module 'output_node_1' [C:/Users/User/Documents/College/LDL/FinalProject/neural_network.v:129]
+INFO: [Synth 8-6155] done synthesizing module 'output_node_1' (14#1) [C:/Users/User/Documents/College/LDL/FinalProject/neural_network.v:129]
+INFO: [Synth 8-6157] synthesizing module 'output_node_2' [C:/Users/User/Documents/College/LDL/FinalProject/neural_network.v:147]
+INFO: [Synth 8-6155] done synthesizing module 'output_node_2' (15#1) [C:/Users/User/Documents/College/LDL/FinalProject/neural_network.v:147]
+INFO: [Synth 8-6157] synthesizing module 'output_node_3' [C:/Users/User/Documents/College/LDL/FinalProject/neural_network.v:164]
+INFO: [Synth 8-6155] done synthesizing module 'output_node_3' (16#1) [C:/Users/User/Documents/College/LDL/FinalProject/neural_network.v:164]
+INFO: [Synth 8-155] case statement is not full and has no default [C:/Users/User/Documents/College/LDL/FinalProject/neural_network.v:53]
 INFO: [Synth 8-6155] done synthesizing module 'neural_network' (17#1) [C:/Users/User/Documents/College/LDL/FinalProject/neural_network.v:1]
-INFO: [Synth 8-6157] synthesizing module 'pixel_snake' [C:/Users/User/Documents/College/LDL/FinalProject/game.v:828]
-INFO: [Synth 8-6155] done synthesizing module 'pixel_snake' (18#1) [C:/Users/User/Documents/College/LDL/FinalProject/game.v:828]
-INFO: [Synth 8-6157] synthesizing module 'pixel_node' [C:/Users/User/Documents/College/LDL/FinalProject/game.v:872]
-INFO: [Synth 8-6155] done synthesizing module 'pixel_node' (19#1) [C:/Users/User/Documents/College/LDL/FinalProject/game.v:872]
+INFO: [Synth 8-6157] synthesizing module 'pixel_snake' [C:/Users/User/Documents/College/LDL/FinalProject/game.v:847]
+INFO: [Synth 8-6155] done synthesizing module 'pixel_snake' (18#1) [C:/Users/User/Documents/College/LDL/FinalProject/game.v:847]
+INFO: [Synth 8-6157] synthesizing module 'pixel_node' [C:/Users/User/Documents/College/LDL/FinalProject/game.v:891]
+INFO: [Synth 8-6155] done synthesizing module 'pixel_node' (19#1) [C:/Users/User/Documents/College/LDL/FinalProject/game.v:891]
 INFO: [Synth 8-638] synthesizing module 'blk_mem_gen_0' [c:/Users/User/Documents/College/LDL/FinalProject/FinalProject/FinalProject.gen/sources_1/ip/blk_mem_gen_0_8/synth/blk_mem_gen_0.vhd:69]
 	Parameter C_FAMILY bound to: artix7 - type: string 
 	Parameter C_XDEVICEFAMILY bound to: artix7 - type: string 
@@ -152,11 +154,9 @@ INFO: [Synth 8-638] synthesizing module 'blk_mem_gen_0' [c:/Users/User/Documents
 	Parameter C_EST_POWER_SUMMARY bound to: Estimated Power for IP     :     9.667804 mW - type: string 
 INFO: [Synth 8-3491] module 'blk_mem_gen_v8_4_4' declared at 'c:/Users/User/Documents/College/LDL/FinalProject/FinalProject/FinalProject.gen/sources_1/ip/blk_mem_gen_0_8/hdl/blk_mem_gen_v8_4_vhsyn_rfs.vhd:195321' bound to instance 'U0' of component 'blk_mem_gen_v8_4_4' [c:/Users/User/Documents/College/LDL/FinalProject/FinalProject/FinalProject.gen/sources_1/ip/blk_mem_gen_0_8/synth/blk_mem_gen_0.vhd:234]
 INFO: [Synth 8-256] done synthesizing module 'blk_mem_gen_0' (30#1) [c:/Users/User/Documents/College/LDL/FinalProject/FinalProject/FinalProject.gen/sources_1/ip/blk_mem_gen_0_8/synth/blk_mem_gen_0.vhd:69]
-WARNING: [Synth 8-689] width (17) of port connection 'addra' does not match port width (15) of module 'blk_mem_gen_0' [C:/Users/User/Documents/College/LDL/FinalProject/game.v:719]
-INFO: [Synth 8-6157] synthesizing module 'pixel_apple' [C:/Users/User/Documents/College/LDL/FinalProject/game.v:940]
-INFO: [Synth 8-6155] done synthesizing module 'pixel_apple' (31#1) [C:/Users/User/Documents/College/LDL/FinalProject/game.v:940]
+INFO: [Synth 8-6157] synthesizing module 'pixel_apple' [C:/Users/User/Documents/College/LDL/FinalProject/game.v:959]
+INFO: [Synth 8-6155] done synthesizing module 'pixel_apple' (31#1) [C:/Users/User/Documents/College/LDL/FinalProject/game.v:959]
 INFO: [Synth 8-6155] done synthesizing module 'game_single' (32#1) [C:/Users/User/Documents/College/LDL/FinalProject/game.v:1]
-WARNING: [Synth 8-689] width (8) of port connection 'out' does not match port width (6) of module 'game_single' [C:/Users/User/Documents/College/LDL/FinalProject/top.v:63]
 INFO: [Synth 8-6157] synthesizing module 'vga_controller' [C:/Users/User/Documents/College/LDL/FinalProject/vga.v:1]
 INFO: [Synth 8-6155] done synthesizing module 'vga_controller' (33#1) [C:/Users/User/Documents/College/LDL/FinalProject/vga.v:1]
 INFO: [Synth 8-6157] synthesizing module 'KeyboardEvent' [C:/Users/User/Documents/College/LDL/FinalProject/KeyboardDecoder.v:1]
@@ -174,8 +174,8 @@ INFO: [Synth 8-6157] synthesizing module 'KeyboardDecoder' [C:/Users/User/Docume
 	Parameter IS_INIT bound to: 8'b10101010 
 	Parameter IS_EXTEND bound to: 8'b11100000 
 	Parameter IS_BREAK bound to: 8'b11110000 
-INFO: [Synth 8-6157] synthesizing module 'KeyboardCtrl_0' [C:/Users/User/Documents/College/LDL/FinalProject/FinalProject/FinalProject.runs/synth_1/.Xil/Vivado-58552-LAPTOP-T7B654NQ/realtime/KeyboardCtrl_0_stub.v:6]
-INFO: [Synth 8-6155] done synthesizing module 'KeyboardCtrl_0' (34#1) [C:/Users/User/Documents/College/LDL/FinalProject/FinalProject/FinalProject.runs/synth_1/.Xil/Vivado-58552-LAPTOP-T7B654NQ/realtime/KeyboardCtrl_0_stub.v:6]
+INFO: [Synth 8-6157] synthesizing module 'KeyboardCtrl_0' [C:/Users/User/Documents/College/LDL/FinalProject/FinalProject/FinalProject.runs/synth_1/.Xil/Vivado-42828-LAPTOP-T7B654NQ/realtime/KeyboardCtrl_0_stub.v:6]
+INFO: [Synth 8-6155] done synthesizing module 'KeyboardCtrl_0' (34#1) [C:/Users/User/Documents/College/LDL/FinalProject/FinalProject/FinalProject.runs/synth_1/.Xil/Vivado-42828-LAPTOP-T7B654NQ/realtime/KeyboardCtrl_0_stub.v:6]
 INFO: [Synth 8-226] default block is never used [C:/Users/User/Documents/College/LDL/FinalProject/KeyboardDecoder.v:132]
 INFO: [Synth 8-226] default block is never used [C:/Users/User/Documents/College/LDL/FinalProject/KeyboardDecoder.v:142]
 INFO: [Synth 8-226] default block is never used [C:/Users/User/Documents/College/LDL/FinalProject/KeyboardDecoder.v:152]
@@ -203,18 +203,18 @@ INFO: [Synth 8-6157] synthesizing module 'seven_segment' [C:/Users/User/Document
 INFO: [Synth 8-6155] done synthesizing module 'seven_segment' (37#1) [C:/Users/User/Documents/College/LDL/FinalProject/seven_segment.v:22]
 INFO: [Synth 8-6155] done synthesizing module 'top' (38#1) [C:/Users/User/Documents/College/LDL/FinalProject/top.v:1]
 ---------------------------------------------------------------------------------
-Finished RTL Elaboration : Time (s): cpu = 00:00:22 ; elapsed = 00:00:23 . Memory (MB): peak = 1602.156 ; gain = 587.824
+Finished RTL Elaboration : Time (s): cpu = 00:00:22 ; elapsed = 00:00:23 . Memory (MB): peak = 1593.930 ; gain = 578.711
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start Handling Custom Attributes
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished Handling Custom Attributes : Time (s): cpu = 00:00:23 ; elapsed = 00:00:24 . Memory (MB): peak = 1602.156 ; gain = 587.824
+Finished Handling Custom Attributes : Time (s): cpu = 00:00:23 ; elapsed = 00:00:24 . Memory (MB): peak = 1593.930 ; gain = 578.711
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished RTL Optimization Phase 1 : Time (s): cpu = 00:00:23 ; elapsed = 00:00:24 . Memory (MB): peak = 1602.156 ; gain = 587.824
+Finished RTL Optimization Phase 1 : Time (s): cpu = 00:00:23 ; elapsed = 00:00:24 . Memory (MB): peak = 1593.930 ; gain = 578.711
 ---------------------------------------------------------------------------------
-Netlist sorting complete. Time (s): cpu = 00:00:01 ; elapsed = 00:00:00.130 . Memory (MB): peak = 1602.156 ; gain = 0.000
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.135 . Memory (MB): peak = 1593.930 ; gain = 0.000
 INFO: [Netlist 29-17] Analyzing 11 Unisim elements for replacement
 INFO: [Netlist 29-28] Unisim Transformation completed in 0 CPU seconds
 INFO: [Project 1-570] Preparing netlist for logic optimization
@@ -231,20 +231,20 @@ Parsing XDC File [C:/Users/User/Documents/College/LDL/FinalProject/FinalProject/
 Finished Parsing XDC File [C:/Users/User/Documents/College/LDL/FinalProject/FinalProject/FinalProject.runs/synth_1/dont_touch.xdc]
 Completed Processing XDC Constraints
 
-Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.001 . Memory (MB): peak = 1602.156 ; gain = 0.000
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.002 . Memory (MB): peak = 1593.930 ; gain = 0.000
 INFO: [Project 1-111] Unisim Transformation Summary:
 No Unisim elements were transformed.
 
-Constraint Validation Runtime : Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.045 . Memory (MB): peak = 1602.156 ; gain = 0.000
+Constraint Validation Runtime : Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.046 . Memory (MB): peak = 1593.930 ; gain = 0.000
 ---------------------------------------------------------------------------------
-Finished Constraint Validation : Time (s): cpu = 00:00:28 ; elapsed = 00:00:29 . Memory (MB): peak = 1602.156 ; gain = 587.824
+Finished Constraint Validation : Time (s): cpu = 00:00:28 ; elapsed = 00:00:29 . Memory (MB): peak = 1593.930 ; gain = 578.711
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start Loading Part and Timing Information
 ---------------------------------------------------------------------------------
 Loading part: xc7a35tcpg236-1
 ---------------------------------------------------------------------------------
-Finished Loading Part and Timing Information : Time (s): cpu = 00:00:28 ; elapsed = 00:00:29 . Memory (MB): peak = 1602.156 ; gain = 587.824
+Finished Loading Part and Timing Information : Time (s): cpu = 00:00:28 ; elapsed = 00:00:29 . Memory (MB): peak = 1593.930 ; gain = 578.711
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start Applying 'set_property' XDC Constraints
@@ -256,10 +256,10 @@ Applied set_property CLOCK_BUFFER_TYPE = NONE for PS2_DATA. (constraint file  c:
 Applied set_property KEEP_HIERARCHY = SOFT for KeyEv/key_de/inst. (constraint file  auto generated constraint).
 Applied set_property KEEP_HIERARCHY = SOFT for gs1/blk_mem_gen_model. (constraint file  auto generated constraint).
 ---------------------------------------------------------------------------------
-Finished applying 'set_property' XDC Constraints : Time (s): cpu = 00:00:28 ; elapsed = 00:00:29 . Memory (MB): peak = 1602.156 ; gain = 587.824
+Finished applying 'set_property' XDC Constraints : Time (s): cpu = 00:00:29 ; elapsed = 00:00:30 . Memory (MB): peak = 1593.930 ; gain = 578.711
 ---------------------------------------------------------------------------------
 INFO: [Synth 8-802] inferred FSM for state register 'state_reg' in module 'KeyboardDecoder'
-WARNING: [Synth 8-327] inferring latch for variable 'mkey_reg' [C:/Users/User/Documents/College/LDL/FinalProject/game.v:51]
+WARNING: [Synth 8-327] inferring latch for variable 'mkey_reg' [C:/Users/User/Documents/College/LDL/FinalProject/game.v:53]
 ---------------------------------------------------------------------------------------------------
                    State |                     New Encoding |                Previous Encoding 
 ---------------------------------------------------------------------------------------------------
@@ -270,18 +270,17 @@ WARNING: [Synth 8-327] inferring latch for variable 'mkey_reg' [C:/Users/User/Do
 ---------------------------------------------------------------------------------------------------
 INFO: [Synth 8-3354] encoded FSM with state register 'state_reg' using encoding 'sequential' in module 'KeyboardDecoder'
 ---------------------------------------------------------------------------------
-Finished RTL Optimization Phase 2 : Time (s): cpu = 00:00:32 ; elapsed = 00:00:33 . Memory (MB): peak = 1602.156 ; gain = 587.824
+Finished RTL Optimization Phase 2 : Time (s): cpu = 00:00:33 ; elapsed = 00:00:34 . Memory (MB): peak = 1593.930 ; gain = 578.711
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start RTL Component Statistics 
 ---------------------------------------------------------------------------------
 Detailed RTL Component Info : 
 +---Adders : 
-	   2 Input   32 Bit       Adders := 42    
 	   3 Input   32 Bit       Adders := 1     
+	   2 Input   32 Bit       Adders := 42    
 	   3 Input   26 Bit       Adders := 3     
-	   2 Input   12 Bit       Adders := 1     
-	   3 Input   12 Bit       Adders := 1     
+	   3 Input   12 Bit       Adders := 5     
 	   2 Input   10 Bit       Adders := 2     
 	   2 Input    9 Bit       Adders := 401   
 	   3 Input    9 Bit       Adders := 1     
@@ -293,11 +292,17 @@ Detailed RTL Component Info :
 	   2 Input      1 Bit         XORs := 3     
 +---Registers : 
 	              512 Bit    Registers := 1     
+	               26 Bit    Registers := 3     
+	               25 Bit    Registers := 1     
+	               24 Bit    Registers := 2     
+	               23 Bit    Registers := 2     
+	               21 Bit    Registers := 1     
 	               15 Bit    Registers := 1     
+	               12 Bit    Registers := 7     
 	               10 Bit    Registers := 3     
 	                9 Bit    Registers := 404   
 	                6 Bit    Registers := 6     
-	                4 Bit    Registers := 21    
+	                4 Bit    Registers := 31    
 	                3 Bit    Registers := 1     
 	                2 Bit    Registers := 2     
 	                1 Bit    Registers := 15    
@@ -306,10 +311,9 @@ Detailed RTL Component Info :
 	               8x32  Multipliers := 1     
 +---Muxes : 
 	   2 Input  512 Bit        Muxes := 1     
-	   2 Input   26 Bit        Muxes := 3     
 	   2 Input   15 Bit        Muxes := 1     
 	   3 Input   12 Bit        Muxes := 33    
-	   2 Input   12 Bit        Muxes := 59    
+	   2 Input   12 Bit        Muxes := 52    
 	   5 Input   12 Bit        Muxes := 1     
 	   2 Input   11 Bit        Muxes := 1     
 	   4 Input   11 Bit        Muxes := 1     
@@ -320,7 +324,8 @@ Detailed RTL Component Info :
 	   2 Input    5 Bit        Muxes := 16    
 	  12 Input    4 Bit        Muxes := 1     
 	   4 Input    4 Bit        Muxes := 18    
-	   2 Input    4 Bit        Muxes := 31    
+	   2 Input    4 Bit        Muxes := 21    
+	   3 Input    4 Bit        Muxes := 3     
 	   5 Input    4 Bit        Muxes := 1     
 	   5 Input    3 Bit        Muxes := 1     
 	   2 Input    3 Bit        Muxes := 2     
@@ -346,66 +351,72 @@ Finished Part Resource Summary
 ---------------------------------------------------------------------------------
 Start Cross Boundary and Area Optimization
 ---------------------------------------------------------------------------------
-DSP Report: Generating DSP sum20, operation Mode is: A*(B:0x65).
+DSP Report: Generating DSP sum21, operation Mode is: A*(B:0x65).
+DSP Report: operator sum21 is absorbed into DSP sum21.
+DSP Report: Generating DSP sum20, operation Mode is: PCIN+A*(B:0xc7).
 DSP Report: operator sum20 is absorbed into DSP sum20.
-DSP Report: Generating DSP sum2, operation Mode is: PCIN+A*(B:0xc7).
-DSP Report: operator sum2 is absorbed into DSP sum2.
-DSP Report: operator sum22 is absorbed into DSP sum2.
-DSP Report: Generating DSP sum2, operation Mode is: PCIN+A*(B:0x189).
-DSP Report: operator sum2 is absorbed into DSP sum2.
-DSP Report: operator sum21 is absorbed into DSP sum2.
-DSP Report: Generating DSP sum2, operation Mode is: PCIN+A*(B:0x52).
-DSP Report: operator sum2 is absorbed into DSP sum2.
-DSP Report: operator sum22 is absorbed into DSP sum2.
-DSP Report: Generating DSP sum10, operation Mode is: A*(B:0x118).
-DSP Report: operator sum10 is absorbed into DSP sum10.
-DSP Report: Generating DSP sum1, operation Mode is: PCIN+A*(B:0x13a).
-DSP Report: operator sum1 is absorbed into DSP sum1.
-DSP Report: operator sum11 is absorbed into DSP sum1.
-DSP Report: Generating DSP sum1, operation Mode is: PCIN+A*(B:0x1d1).
-DSP Report: operator sum1 is absorbed into DSP sum1.
-DSP Report: operator sum11 is absorbed into DSP sum1.
-DSP Report: Generating DSP sum20, operation Mode is: A*(B:0x89).
+DSP Report: operator sum23 is absorbed into DSP sum20.
+DSP Report: Generating DSP sum20, operation Mode is: PCIN+A*(B:0x189).
 DSP Report: operator sum20 is absorbed into DSP sum20.
-DSP Report: Generating DSP sum2, operation Mode is: PCIN+A*(B:0x1b6).
-DSP Report: operator sum2 is absorbed into DSP sum2.
-DSP Report: operator sum21 is absorbed into DSP sum2.
-DSP Report: Generating DSP sum2, operation Mode is: PCIN+A*(B:0x316).
-DSP Report: operator sum2 is absorbed into DSP sum2.
-DSP Report: operator sum21 is absorbed into DSP sum2.
-DSP Report: Generating DSP sum10, operation Mode is: A*(B:0x178).
+DSP Report: operator sum22 is absorbed into DSP sum20.
+DSP Report: Generating DSP sum2_reg, operation Mode is: PCIN+A*(B:0x52).
+DSP Report: register sum2_reg is absorbed into DSP sum2_reg.
+DSP Report: operator sum20 is absorbed into DSP sum2_reg.
+DSP Report: operator sum23 is absorbed into DSP sum2_reg.
+DSP Report: Generating DSP sum11, operation Mode is: A*(B:0x118).
+DSP Report: operator sum11 is absorbed into DSP sum11.
+DSP Report: Generating DSP sum10, operation Mode is: PCIN+A*(B:0x13a).
 DSP Report: operator sum10 is absorbed into DSP sum10.
-DSP Report: Generating DSP sum1, operation Mode is: PCIN+A*(B:0x317).
-DSP Report: operator sum1 is absorbed into DSP sum1.
-DSP Report: operator sum12 is absorbed into DSP sum1.
-DSP Report: Generating DSP sum1, operation Mode is: PCIN+A*(B:0x16d).
-DSP Report: operator sum1 is absorbed into DSP sum1.
-DSP Report: operator sum11 is absorbed into DSP sum1.
-DSP Report: Generating DSP sum1, operation Mode is: PCIN+A*(B:0x13d).
-DSP Report: operator sum1 is absorbed into DSP sum1.
-DSP Report: operator sum12 is absorbed into DSP sum1.
-DSP Report: Generating DSP sum2, operation Mode is: (C:0xd)+A*(B:0x12d).
-DSP Report: operator sum2 is absorbed into DSP sum2.
-DSP Report: operator sum20 is absorbed into DSP sum2.
-DSP Report: Generating DSP sum10, operation Mode is: A*(B:0x29b).
+DSP Report: operator sum12 is absorbed into DSP sum10.
+DSP Report: Generating DSP sum1_reg, operation Mode is: PCIN+A*(B:0x1d1).
+DSP Report: register sum1_reg is absorbed into DSP sum1_reg.
+DSP Report: operator sum10 is absorbed into DSP sum1_reg.
+DSP Report: operator sum12 is absorbed into DSP sum1_reg.
+DSP Report: Generating DSP sum21, operation Mode is: A*(B:0x89).
+DSP Report: operator sum21 is absorbed into DSP sum21.
+DSP Report: Generating DSP sum20, operation Mode is: PCIN+A*(B:0x1b6).
+DSP Report: operator sum20 is absorbed into DSP sum20.
+DSP Report: operator sum22 is absorbed into DSP sum20.
+DSP Report: Generating DSP sum2_reg, operation Mode is: PCIN+A*(B:0x316).
+DSP Report: register sum2_reg is absorbed into DSP sum2_reg.
+DSP Report: operator sum20 is absorbed into DSP sum2_reg.
+DSP Report: operator sum22 is absorbed into DSP sum2_reg.
+DSP Report: Generating DSP sum11, operation Mode is: A*(B:0x178).
+DSP Report: operator sum11 is absorbed into DSP sum11.
+DSP Report: Generating DSP sum10, operation Mode is: PCIN+A*(B:0x317).
 DSP Report: operator sum10 is absorbed into DSP sum10.
-DSP Report: Generating DSP sum1, operation Mode is: PCIN+A*(B:0x1b9).
-DSP Report: operator sum1 is absorbed into DSP sum1.
-DSP Report: operator sum14 is absorbed into DSP sum1.
-DSP Report: Generating DSP sum1, operation Mode is: PCIN+A*(B:0x1a4).
-DSP Report: operator sum1 is absorbed into DSP sum1.
-DSP Report: operator sum11 is absorbed into DSP sum1.
-DSP Report: Generating DSP sum1, operation Mode is: PCIN+A*(B:0x16e).
-DSP Report: operator sum1 is absorbed into DSP sum1.
-DSP Report: operator sum12 is absorbed into DSP sum1.
-DSP Report: Generating DSP sum1, operation Mode is: PCIN+A*(B:0x24).
-DSP Report: operator sum1 is absorbed into DSP sum1.
-DSP Report: operator sum13 is absorbed into DSP sum1.
-DSP Report: Generating DSP sum1, operation Mode is: PCIN+A*(B:0xdd).
-DSP Report: operator sum1 is absorbed into DSP sum1.
-DSP Report: operator sum14 is absorbed into DSP sum1.
+DSP Report: operator sum13 is absorbed into DSP sum10.
+DSP Report: Generating DSP sum10, operation Mode is: PCIN+A*(B:0x16d).
+DSP Report: operator sum10 is absorbed into DSP sum10.
+DSP Report: operator sum12 is absorbed into DSP sum10.
+DSP Report: Generating DSP sum1_reg, operation Mode is: PCIN+A*(B:0x13d).
+DSP Report: register sum1_reg is absorbed into DSP sum1_reg.
+DSP Report: operator sum10 is absorbed into DSP sum1_reg.
+DSP Report: operator sum13 is absorbed into DSP sum1_reg.
+DSP Report: Generating DSP sum2_reg, operation Mode is: (C:0xd)+A*(B:0x12d).
+DSP Report: register sum2_reg is absorbed into DSP sum2_reg.
+DSP Report: operator sum20 is absorbed into DSP sum2_reg.
+DSP Report: operator sum21 is absorbed into DSP sum2_reg.
+DSP Report: Generating DSP sum11, operation Mode is: A*(B:0x29b).
+DSP Report: operator sum11 is absorbed into DSP sum11.
+DSP Report: Generating DSP sum10, operation Mode is: PCIN+A*(B:0x1b9).
+DSP Report: operator sum10 is absorbed into DSP sum10.
+DSP Report: operator sum15 is absorbed into DSP sum10.
+DSP Report: Generating DSP sum10, operation Mode is: PCIN+A*(B:0x1a4).
+DSP Report: operator sum10 is absorbed into DSP sum10.
+DSP Report: operator sum12 is absorbed into DSP sum10.
+DSP Report: Generating DSP sum10, operation Mode is: PCIN+A*(B:0x16e).
+DSP Report: operator sum10 is absorbed into DSP sum10.
+DSP Report: operator sum13 is absorbed into DSP sum10.
+DSP Report: Generating DSP sum10, operation Mode is: PCIN+A*(B:0x24).
+DSP Report: operator sum10 is absorbed into DSP sum10.
+DSP Report: operator sum14 is absorbed into DSP sum10.
+DSP Report: Generating DSP sum1_reg, operation Mode is: PCIN+A*(B:0xdd).
+DSP Report: register sum1_reg is absorbed into DSP sum1_reg.
+DSP Report: operator sum10 is absorbed into DSP sum1_reg.
+DSP Report: operator sum15 is absorbed into DSP sum1_reg.
 ---------------------------------------------------------------------------------
-Finished Cross Boundary and Area Optimization : Time (s): cpu = 00:01:05 ; elapsed = 00:01:06 . Memory (MB): peak = 1731.316 ; gain = 716.984
+Finished Cross Boundary and Area Optimization : Time (s): cpu = 00:01:13 ; elapsed = 00:01:14 . Memory (MB): peak = 1806.945 ; gain = 791.727
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start ROM, RAM, DSP, Shift Register and Retiming Reporting
@@ -418,24 +429,24 @@ DSP: Preliminary Mapping	Report (see note below)
 |output_node_1 | A*(B:0x65)          | 12     | 7      | -      | -      | 19     | 0    | 0    | -    | -    | -     | 0    | 0    | 
 |output_node_1 | PCIN+A*(B:0xc7)     | 12     | 8      | -      | -      | 21     | 0    | 0    | -    | -    | -     | 0    | 0    | 
 |output_node_1 | PCIN+A*(B:0x189)    | 12     | 9      | -      | -      | 22     | 0    | 0    | -    | -    | -     | 0    | 0    | 
-|output_node_1 | PCIN+A*(B:0x52)     | 12     | 7      | -      | -      | 23     | 0    | 0    | -    | -    | -     | 0    | 0    | 
+|output_node_1 | PCIN+A*(B:0x52)     | 12     | 7      | -      | -      | 23     | 0    | 0    | -    | -    | -     | 0    | 1    | 
 |output_node_1 | A*(B:0x118)         | 12     | 9      | -      | -      | 21     | 0    | 0    | -    | -    | -     | 0    | 0    | 
 |output_node_1 | PCIN+A*(B:0x13a)    | 12     | 9      | -      | -      | 22     | 0    | 0    | -    | -    | -     | 0    | 0    | 
-|output_node_1 | PCIN+A*(B:0x1d1)    | 12     | 9      | -      | -      | 23     | 0    | 0    | -    | -    | -     | 0    | 0    | 
+|output_node_1 | PCIN+A*(B:0x1d1)    | 12     | 9      | -      | -      | 23     | 0    | 0    | -    | -    | -     | 0    | 1    | 
 |output_node_2 | A*(B:0x89)          | 12     | 8      | -      | -      | 20     | 0    | 0    | -    | -    | -     | 0    | 0    | 
 |output_node_2 | PCIN+A*(B:0x1b6)    | 12     | 9      | -      | -      | 22     | 0    | 0    | -    | -    | -     | 0    | 0    | 
-|output_node_2 | PCIN+A*(B:0x316)    | 12     | 10     | -      | -      | 23     | 0    | 0    | -    | -    | -     | 0    | 0    | 
+|output_node_2 | PCIN+A*(B:0x316)    | 12     | 10     | -      | -      | 23     | 0    | 0    | -    | -    | -     | 0    | 1    | 
 |output_node_2 | A*(B:0x178)         | 12     | 9      | -      | -      | 21     | 0    | 0    | -    | -    | -     | 0    | 0    | 
 |output_node_2 | PCIN+A*(B:0x317)    | 12     | 10     | -      | -      | 23     | 0    | 0    | -    | -    | -     | 0    | 0    | 
 |output_node_2 | PCIN+A*(B:0x16d)    | 12     | 9      | -      | -      | 24     | 0    | 0    | -    | -    | -     | 0    | 0    | 
-|output_node_2 | PCIN+A*(B:0x13d)    | 12     | 9      | -      | -      | 24     | 0    | 0    | -    | -    | -     | 0    | 0    | 
-|output_node_3 | (C:0xd)+A*(B:0x12d) | 12     | 9      | 4      | -      | 21     | 0    | 0    | 0    | -    | -     | 0    | 0    | 
+|output_node_2 | PCIN+A*(B:0x13d)    | 12     | 9      | -      | -      | 24     | 0    | 0    | -    | -    | -     | 0    | 1    | 
+|output_node_3 | (C:0xd)+A*(B:0x12d) | 12     | 9      | 4      | -      | 21     | 0    | 0    | 0    | -    | -     | 0    | 1    | 
 |output_node_3 | A*(B:0x29b)         | 12     | 10     | -      | -      | 22     | 0    | 0    | -    | -    | -     | 0    | 0    | 
 |output_node_3 | PCIN+A*(B:0x1b9)    | 12     | 9      | -      | -      | 23     | 0    | 0    | -    | -    | -     | 0    | 0    | 
 |output_node_3 | PCIN+A*(B:0x1a4)    | 12     | 9      | -      | -      | 24     | 0    | 0    | -    | -    | -     | 0    | 0    | 
 |output_node_3 | PCIN+A*(B:0x16e)    | 12     | 9      | -      | -      | 25     | 0    | 0    | -    | -    | -     | 0    | 0    | 
 |output_node_3 | PCIN+A*(B:0x24)     | 12     | 6      | -      | -      | 25     | 0    | 0    | -    | -    | -     | 0    | 0    | 
-|output_node_3 | PCIN+A*(B:0xdd)     | 12     | 8      | -      | -      | 25     | 0    | 0    | -    | -    | -     | 0    | 0    | 
+|output_node_3 | PCIN+A*(B:0xdd)     | 12     | 8      | -      | -      | 25     | 0    | 0    | -    | -    | -     | 0    | 1    | 
 +--------------+---------------------+--------+--------+--------+--------+--------+------+------+------+------+-------+------+------+
 
 Note: The table above is a preliminary report that shows the DSPs inferred at the current stage of the synthesis flow. Some DSP may be reimplemented as non DSP primitives later in the synthesis flow. Multiple instantiated DSPs are reported only once.
@@ -446,19 +457,19 @@ Finished ROM, RAM, DSP, Shift Register and Retiming Reporting
 Start Applying XDC Timing Constraints
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished Applying XDC Timing Constraints : Time (s): cpu = 00:01:11 ; elapsed = 00:01:12 . Memory (MB): peak = 1731.316 ; gain = 716.984
+Finished Applying XDC Timing Constraints : Time (s): cpu = 00:01:19 ; elapsed = 00:01:20 . Memory (MB): peak = 1806.945 ; gain = 791.727
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start Timing Optimization
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished Timing Optimization : Time (s): cpu = 00:02:03 ; elapsed = 00:02:05 . Memory (MB): peak = 2048.941 ; gain = 1034.609
+Finished Timing Optimization : Time (s): cpu = 00:01:21 ; elapsed = 00:01:23 . Memory (MB): peak = 1806.945 ; gain = 791.727
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start Technology Mapping
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished Technology Mapping : Time (s): cpu = 00:02:10 ; elapsed = 00:02:12 . Memory (MB): peak = 2048.941 ; gain = 1034.609
+Finished Technology Mapping : Time (s): cpu = 00:01:27 ; elapsed = 00:01:29 . Memory (MB): peak = 1806.945 ; gain = 791.727
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start IO Insertion
@@ -476,37 +487,37 @@ Start Final Netlist Cleanup
 Finished Final Netlist Cleanup
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished IO Insertion : Time (s): cpu = 00:02:14 ; elapsed = 00:02:16 . Memory (MB): peak = 2048.941 ; gain = 1034.609
+Finished IO Insertion : Time (s): cpu = 00:01:31 ; elapsed = 00:01:32 . Memory (MB): peak = 1806.945 ; gain = 791.727
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start Renaming Generated Instances
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished Renaming Generated Instances : Time (s): cpu = 00:02:14 ; elapsed = 00:02:16 . Memory (MB): peak = 2048.941 ; gain = 1034.609
+Finished Renaming Generated Instances : Time (s): cpu = 00:01:31 ; elapsed = 00:01:32 . Memory (MB): peak = 1806.945 ; gain = 791.727
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start Rebuilding User Hierarchy
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished Rebuilding User Hierarchy : Time (s): cpu = 00:02:15 ; elapsed = 00:02:17 . Memory (MB): peak = 2048.941 ; gain = 1034.609
+Finished Rebuilding User Hierarchy : Time (s): cpu = 00:01:32 ; elapsed = 00:01:34 . Memory (MB): peak = 1806.945 ; gain = 791.727
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start Renaming Generated Ports
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished Renaming Generated Ports : Time (s): cpu = 00:02:15 ; elapsed = 00:02:17 . Memory (MB): peak = 2048.941 ; gain = 1034.609
+Finished Renaming Generated Ports : Time (s): cpu = 00:01:32 ; elapsed = 00:01:34 . Memory (MB): peak = 1806.945 ; gain = 791.727
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start Handling Custom Attributes
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished Handling Custom Attributes : Time (s): cpu = 00:02:16 ; elapsed = 00:02:18 . Memory (MB): peak = 2048.941 ; gain = 1034.609
+Finished Handling Custom Attributes : Time (s): cpu = 00:01:33 ; elapsed = 00:01:35 . Memory (MB): peak = 1806.945 ; gain = 791.727
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start Renaming Generated Nets
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished Renaming Generated Nets : Time (s): cpu = 00:02:16 ; elapsed = 00:02:18 . Memory (MB): peak = 2048.941 ; gain = 1034.609
+Finished Renaming Generated Nets : Time (s): cpu = 00:01:33 ; elapsed = 00:01:35 . Memory (MB): peak = 1806.945 ; gain = 791.727
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start Writing Synthesis Report
@@ -525,46 +536,46 @@ Report Cell Usage:
 +------+-------------+------+
 |1     |KeyboardCtrl |     1|
 |2     |BUFG         |     2|
-|3     |CARRY4       |   806|
+|3     |CARRY4       |   606|
 |4     |DSP48E1      |    21|
-|6     |LUT1         |   312|
-|7     |LUT2         |  1358|
-|8     |LUT3         |  1360|
-|9     |LUT4         |  3242|
-|10    |LUT5         |  2875|
-|11    |LUT6         |  9287|
-|12    |MUXF7        |  1685|
-|13    |MUXF8        |   402|
-|14    |RAMB18E1     |     1|
-|15    |RAMB36E1     |    10|
-|25    |FDCE         |    12|
-|26    |FDRE         |  3907|
-|27    |FDSE         |    44|
-|28    |LD           |     4|
-|29    |IBUF         |     4|
-|30    |OBUF         |    25|
+|7     |LUT1         |   235|
+|8     |LUT2         |  1129|
+|9     |LUT3         |   973|
+|10    |LUT4         |  3210|
+|11    |LUT5         |  2359|
+|12    |LUT6         |  8701|
+|13    |MUXF7        |  2306|
+|14    |MUXF8        |   906|
+|15    |RAMB18E1     |     1|
+|16    |RAMB36E1     |    10|
+|26    |FDCE         |    12|
+|27    |FDRE         |  4210|
+|28    |FDSE         |    64|
+|29    |LD           |     4|
+|30    |IBUF         |     4|
+|31    |OBUF         |    25|
 +------+-------------+------+
 ---------------------------------------------------------------------------------
-Finished Writing Synthesis Report : Time (s): cpu = 00:02:16 ; elapsed = 00:02:18 . Memory (MB): peak = 2048.941 ; gain = 1034.609
+Finished Writing Synthesis Report : Time (s): cpu = 00:01:33 ; elapsed = 00:01:35 . Memory (MB): peak = 1806.945 ; gain = 791.727
 ---------------------------------------------------------------------------------
 Synthesis finished with 0 errors, 0 critical warnings and 1 warnings.
-Synthesis Optimization Runtime : Time (s): cpu = 00:01:50 ; elapsed = 00:02:15 . Memory (MB): peak = 2048.941 ; gain = 1034.609
-Synthesis Optimization Complete : Time (s): cpu = 00:02:16 ; elapsed = 00:02:18 . Memory (MB): peak = 2048.941 ; gain = 1034.609
+Synthesis Optimization Runtime : Time (s): cpu = 00:01:07 ; elapsed = 00:01:32 . Memory (MB): peak = 1806.945 ; gain = 791.727
+Synthesis Optimization Complete : Time (s): cpu = 00:01:33 ; elapsed = 00:01:35 . Memory (MB): peak = 1806.945 ; gain = 791.727
 INFO: [Project 1-571] Translating synthesized netlist
-Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.172 . Memory (MB): peak = 2048.941 ; gain = 0.000
-INFO: [Netlist 29-17] Analyzing 2929 Unisim elements for replacement
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.167 . Memory (MB): peak = 1806.945 ; gain = 0.000
+INFO: [Netlist 29-17] Analyzing 3854 Unisim elements for replacement
 INFO: [Netlist 29-28] Unisim Transformation completed in 0 CPU seconds
 INFO: [Project 1-570] Preparing netlist for logic optimization
 INFO: [Opt 31-138] Pushed 0 inverter(s) to 0 load pin(s).
-Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.003 . Memory (MB): peak = 2048.941 ; gain = 0.000
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.003 . Memory (MB): peak = 1806.945 ; gain = 0.000
 INFO: [Project 1-111] Unisim Transformation Summary:
   A total of 4 instances were transformed.
   LD => LDCE: 4 instances
 
 INFO: [Common 17-83] Releasing license: Synthesis
-86 Infos, 6 Warnings, 0 Critical Warnings and 0 Errors encountered.
+90 Infos, 2 Warnings, 0 Critical Warnings and 0 Errors encountered.
 synth_design completed successfully
-synth_design: Time (s): cpu = 00:02:23 ; elapsed = 00:02:25 . Memory (MB): peak = 2048.941 ; gain = 1034.609
+synth_design: Time (s): cpu = 00:01:39 ; elapsed = 00:01:42 . Memory (MB): peak = 1806.945 ; gain = 791.727
 INFO: [Common 17-1381] The checkpoint 'C:/Users/User/Documents/College/LDL/FinalProject/FinalProject/FinalProject.runs/synth_1/top.dcp' has been generated.
 INFO: [runtcl-4] Executing : report_utilization -file top_utilization_synth.rpt -pb top_utilization_synth.pb
-INFO: [Common 17-206] Exiting Vivado at Thu Jan 11 04:11:53 2024...
+INFO: [Common 17-206] Exiting Vivado at Thu Jan 11 19:59:54 2024...

@@ -115,7 +115,6 @@ proc step_failed { step } {
 OPTRACE "impl_1" END { }
 }
 
-set_msg_config -id {Common 17-41} -limit 10000000
 
 OPTRACE "impl_1" START { ROLLUP_1 }
 OPTRACE "Phase: Init Design" START { ROLLUP_AUTO }
@@ -142,7 +141,7 @@ OPTRACE "set parameters" END { }
 OPTRACE "add files" START { }
   add_files -quiet C:/Users/User/Documents/College/LDL/FinalProject/FinalProject/FinalProject.runs/synth_1/top.dcp
   read_ip -quiet C:/Users/User/Documents/College/LDL/FinalProject/FinalProject/FinalProject.srcs/sources_1/ip/KeyboardCtrl_0_2/KeyboardCtrl_0.xci
-  read_ip -quiet c:/Users/User/Documents/College/LDL/FinalProject/FinalProject/FinalProject.srcs/sources_1/ip/blk_mem_gen_0_1/blk_mem_gen_0.xci
+  read_ip -quiet C:/Users/User/Documents/College/LDL/FinalProject/FinalProject/FinalProject.srcs/sources_1/ip/blk_mem_gen_0_1/blk_mem_gen_0.xci
 OPTRACE "read constraints: implementation" START { }
   read_xdc C:/Users/User/Documents/College/LDL/FinalProject/FinalProject/FinalProject.srcs/constrs_1/new/constr.xdc
 OPTRACE "read constraints: implementation" END { }

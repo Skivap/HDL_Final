@@ -16,6 +16,7 @@ module game_single(
    output reg [5:0] x, 
    output reg [5:0] y
 );
+    // Clock divisor
     wire one_sec;
     reg game_over;
     wire frame_enable;
@@ -45,6 +46,7 @@ module game_single(
     parameter left_ = 2'b10;
     parameter right_ = 2'b11;
     
+    // Conver AI output to move
     always@(*) begin
         if(ai_move == 0)begin
             case(last_move) // turn right
@@ -52,22 +54,25 @@ module game_single(
                 down_:  mkey = 4'b0100;
                 left_:  mkey = 4'b0001;
                 right_: mkey = 4'b0010;
+                default: mkey = 4'b0000;
             endcase
         end
         else if(ai_move == 1) begin
-            case(last_move)
+            case(last_move) // go straight
                 up_:    mkey = 4'b0001;
-                    down_:  mkey = 4'b0010;
+                down_:  mkey = 4'b0010;
                 left_:  mkey = 4'b0100;
                 right_: mkey = 4'b1000;
+                default: mkey = 4'b0000;
             endcase
         end
         else if(ai_move == 2) begin
-            case(last_move)
+            case(last_move) // turn left
                 up_:    mkey = 4'b0100;
                 down_:  mkey = 4'b1000;
                 left_:  mkey = 4'b0010;
                 right_: mkey = 4'b0001;
+                default: mkey = 4'b0000;
             endcase
         end
     end
@@ -233,7 +238,7 @@ module game_single(
     wire [3:0] res1, res2, res3;
     
     neural_network nn(
-        nin1, nin2, nin3, nin4, nin5, nin6,
+        clk, nin1, nin2, nin3, nin4, nin5, nin6,
         ai_move,
         hidval1, hidval2, hidval3, hidval4, hidval5, hidval6, hidval7,
         res1, res2, res3
@@ -445,18 +450,32 @@ module game_single(
    wire [11:0] data;
    wire clk_25MHz;
    wire clk_22;
-   reg [16:0] pixel_addr_model;
+   reg [14:0] pixel_addr_model;
    wire [11:0] pixel_model;
    
-   wire [5:0] x_c, y_c, pix_x, pix_y;
+   reg [5:0] x_c, y_c, pix_x, pix_y;
    wire [9:0] coordinate_pixel;
    assign coordinate_pixel = x_c * 20 + y_c < 400 ?  x_c * 20 + y_c : 0;
    
    wire [11:0] snake_color;
-   assign y_c = h_cnt >= 20 ? (h_cnt-20)/15 : 0;
-   assign x_c = v_cnt >= 90 ? (v_cnt-90)/15 : 0;
-   assign pix_y = h_cnt >= 20 ? (h_cnt-20)%15 : 0;
-   assign pix_x = v_cnt >= 90 ? (v_cnt-90)%15 : 0;
+   always@(*) begin
+        if(h_cnt >= 20) begin
+            y_c = (h_cnt-20)/15;
+            pix_y = (h_cnt-20)%15;
+        end
+        else begin
+            y_c = 0;
+            pix_y = 0;
+        end
+        if(v_cnt >= 90) begin
+            x_c = (v_cnt-90)/15;
+            pix_x = (v_cnt-90)%15;
+        end
+        else begin
+            x_c = 0;
+            pix_x = 0;
+        end
+   end
    
    clock_divisor_25MHz clk_25(
       .clk(clk),
@@ -742,7 +761,7 @@ module game_single(
         apple_pix
     );
    
-   // Rendering
+   // I rather be homeless than rendering in verilog
    always @(*) begin
         if(!valid)
              pixel = 12'h000;

@@ -47,14 +47,16 @@ module top(
     wire [9:0] h_cnt; //640
     wire [9:0] v_cnt;  //480
     wire [3:0] state;
+    wire clk22;
 
     clock_divisor_25MHz clk_wiz_0_inst(
       .clk(clk),
-      .clk1(clk_25MHz)
+      .clk1(clk_25MHz),
+      .clk22(clk22)
     );
 
     wire [5:0] x, y;
-    wire [7:0] nooral;
+    wire [5:0] nooral;
     wire [1:0] move;
     game_single gs1(
         clk, rst2, rst, state,
